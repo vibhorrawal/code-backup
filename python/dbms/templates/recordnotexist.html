@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Available bus</title>
+
+  
+
+<link rel="stylesheet" href="../static/style.css">
+
+
+  <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+
+</head>
+
+<body text="black">
+   <header id="fh5co-header-section" class="sticky-banner">
+      <div class="container">
+        <div class="nav-header">
+          <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+          <h1 id="fh5co-logo"><font size="4">BUZZ</a></h1>
+          <!-- START #fh5co-menu-wrap -->
+          <nav id="fh5co-menu-wrap" role="navigation">
+            <ul class="sf-menu" id="fh5co-primary-menu">
+              <li><a href="{{url_for('index')}}"><b><b>HOME</b></b></a></li>
+              
+              
+              <li><a href="{{url_for('contact')}}"><b><b>CONTACT</b></b></a></li>
+              <!-- <li><a href="{{url_for('logout')}}" >LOGOUT</li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+   <br><br> <h2 align="center"><font size="10"; color=red>No record found!</font></h2>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>busInformation</title>
+
+  
+
+<link rel="stylesheet" href="../static/style.css">
+
+
+	<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+
+</head>
+
+<body text="black">
+
+<h2 align="center"><font size="10"; color=#006400>Bus Info.</font></h2>
+<form action="{{url_for('reserve')}}" method="post">
+<table>
+
+  <tr>	
+    
+    <th><font color=black>Bus Name</font></th>
+    <th><font color=black>A C Status</font></th>
+    <th><font color=black>No of seats Available</font></th>
+    <th><font color=black>Select number of seats to Book</font></th>
+  </tr>
+    {% for row in rows%}
+ 
+ <tr> <td>{{row[1]}}</td>
+ <td>{{row[2]}}</td><td>{{row[3]}}</td>
+<td>
+
+
+{% endfor %}
+
+  
+  <select name="selected_seats" style="background-color: #006400;color:white;padding:6px;">
+  <option value="select">--Select No of Seats</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+</td>
+</tr>
+</table>
+<br><br><button name="bus_ID" value="{{bus_ID}}" type="submit" style="background-color: #006400;color:white;padding:5px; 163px;align-self: center;">BOOK</button> 
+      <input type="text" name="date" value={{date}} style="display: none"><input type="text" name="fplace" value={{fplace}} style="display: none"><input type="text" name="tplace" value={{tplace}} style="display: none">
+</form>
+</body>
+</html>

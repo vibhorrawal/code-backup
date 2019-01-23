@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Available bus</title>
+
+  
+
+<link rel="stylesheet" href="../static/style.css">
+
+
+  <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+
+</head>
+
+<body text="black">
+
+<h2 align="center"><font size="10"; color=#006400>Available Buses</font></h2>
+  {% if rows == [] %}
+ <br><br> <h2 align="center"><font size="10"; color=red>No record found!</font></h2>
+{% else %}
+<table>
+
+  <tr>
+    <th><font color=black>Bus ID</font></th>
+    <th><font color=black>Bus Name</font></th>
+    <th><font color=black>A/C Status</font></th>
+    <th><font color=black>No of seats</font></th>
+    <th><font color=black>BOOK</font></th>
+  </tr>
+    {% for row in rows %}
+ <form action= "{{url_for('selected')}}" method = "post">
+ <tr> <td>{{row[0]}}</td><td>{{row[1]}}</td>
+ <td>{{row[2]}}</td><td>{{row[3]}}</td>
+ <td><button name="bus_ID" value="{{row[0]}}" type="submit" style="background-color: #006400;color:white;padding:5px; 163px;">BOOK</button> 
+      <input type="text" name="date" value={{date}} style="display: none"><input type="text" name="fplace" value={{fplace}} style="display: none"><input type="text" name="tplace" value={{tplace}} style="display: none"></td>
+
+</tr>
+</form>
+{% endfor %}
+
+{%endif %}
+
+</table>
+
+</body>
+</html>
