@@ -1,0 +1,8 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/vibho/xilinx_projects/project_2_ripple_ca/project_2_ripple_ca.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/vibho/xilinx_projects/project_2_ripple_ca/project_2_ripple_ca.srcs/sources_1/new/adder.v,1550621960,verilog,,C:/Users/vibho/xilinx_projects/project_2_ripple_ca/project_2_ripple_ca.srcs/sources_1/new/ripple_adder.v,,adder,,,,,,,,
+C:/Users/vibho/xilinx_projects/project_2_ripple_ca/project_2_ripple_ca.srcs/sources_1/new/ripple_adder.v,1550625855,verilog,,C:/Users/vibho/xilinx_projects/project_2_ripple_ca/project_2_ripple_ca.srcs/sources_1/new/test.v,,ripple_adder,,,,,,,,
+C:/Users/vibho/xilinx_projects/project_2_ripple_ca/project_2_ripple_ca.srcs/sources_1/new/test.v,1550626016,verilog,,,C:/Users/vibho/xilinx_projects/project_2_ripple_ca/project_2_ripple_ca.srcs/sources_1/new/ripple_adder.v,test,,,,,,,,
