@@ -1,0 +1,1000 @@
+  761  ./a.out
+  762  gcc 2.c
+  763  ./a.out
+  764  cd ..
+  765  cd cpp
+  766  g++ 3.cpp
+  767  ./a.out
+  768  g++ 3.cpp
+  769  ./a.out
+  770  g++ 3.cpp
+  771  ./a.out
+  772  g++ 3.cpp
+  773  ./a.out
+  774  g++ 3.cpp
+  775  ./a.out
+  776  g++ 4.cpp
+  777  ./a.out
+  778  g++ 4.cpp
+  779  ./a.out
+  780  g++ 4.cpp
+  781  ./a.out
+  782  g++ 4.cpp
+  783  ./a.out
+  784  g++ 3.cpp
+  785  ./a.out
+  786  g++ 3.cpp
+  787  ./a.out
+  788  g++ 3.cpp
+  789  ./a.out
+  790  g++ 3.cpp
+  791  ./a.out
+  792  g++ 3.cpp
+  793  ./a.out
+  794  g++ 3.cpp
+  795  ./a.out
+  796  g++ 3.cpp
+  797  ./a.out
+  798  g++ 4.cpp
+  799  ./a.out
+  800  g++ 3.cpp
+  801  ./a.out
+  802  g++ 1.cpp
+  803  ./a.out
+  804  g++ 5.c
+  805  g++ 5.cpp
+  806  ./a.out
+  807  g++ 5.cpp
+  808  ./a.out
+  809  g++ 5.cpp
+  810  ./a.out
+  811  g++ 5.cpp
+  812  ./a.out
+  813  g++ 6.cpp
+  814  ./a.out
+  815  g++ 6.cpp
+  816  ./a.out
+  817  g++ 6.cpp
+  818  ./a.out
+  819  g++ 6.cpp
+  820  ./a.out
+  821  g++ 6.cpp
+  822  ./a.out
+  823  g++ 6.cpp
+  824  ./a.out
+  825  g++ 6.cpp
+  826  ./a.out
+  827  g++ 6.cpp
+  828  ./a.out
+  829  g++ 6.cpp
+  830  ./a.out
+  831  g++ 6.cpp
+  832  ./a.out
+  833  g++ 6.cpp
+  834  ./a.out
+  835  g++ 6.cpp
+  836  ./a.out
+  837  g++ 6.cpp
+  838  ./a.out
+  839  g++ 6.cpp
+  840  ./a.out
+  841  g++ 6.cpp
+  842  ./a.out
+  843  g++ 6.cpp
+  844  ./a.out
+  845  g++ 6.cpp
+  846  ./a.out
+  847  g++ 6.cpp
+  848  ./a.out
+  849  g++ 6.cpp
+  850  ./a.out
+  851  g++ 6.cpp
+  852  ./a.out
+  853  g++ 6.cpp
+  854  ./a.out
+  855  g++ 6.cpp
+  856  ./a.out
+  857  g++ 6.cpp
+  858  ./a.out
+  859  g++ 6.cpp
+  860  ./a.out
+  861  g++ 6.cpp
+  862  ./a.out
+  863  g++ 6.cpp
+  864  ./a.out
+  865  g++ 6.cpp
+  866  ./a.out
+  867  g++ 6.cpp
+  868  ./a.out
+  869  g++ 6.cpp
+  870  ./a.out
+  871  g++ 6.cpp
+  872  ./a.out
+  873  g++ 6.cpp
+  874  ./a.out
+  875  g++ 6.cpp
+  876  ./a.out
+  877  g++ 6.cpp
+  878  ./a.out
+  879  g++ 6.cpp
+  880  ./a.out
+  881  g++ 6.cpp
+  882  ./a.out
+  883  g++ 6.cpp
+  884  ./a.out
+  885  g++ 6.cpp
+  886  ./a.out
+  887  g++ 6.cpp
+  888  ./a.out
+  889  g++ 6.cpp
+  890  ./a.out
+  891  g++ 7.cpp
+  892  ./a.out
+  893  g++ 7.cpp
+  894  ./a.out
+  895  g++ 7.cpp
+  896  ./a.out
+  897  g++ 7.cpp
+  898  ./a.out
+  899  fbd
+  900  ./a.out
+  901  fbd
+  902  g++ 7.cpp
+  903  ./a.out
+  904  g++ 8.cpp
+  905  ./a.out
+  906  g++ 8.cpp
+  907  ./a.out
+  908  g++ 8.cpp
+  909  ./a.out
+  910  g++ 8.cpp
+  911  ./a.out
+  912  g++ 8.cpp
+  913  ./a.out
+  914  g++ 8.cpp
+  915  ./a.out
+  916  g++ 7.cpp
+  917  ./a.out
+  918  g++ 7.cpp
+  919  ./a.out
+  920  g++ 7.cpp
+  921  ./a.out
+  922  cd Documents/cpp
+  923  g++ 8.cpp
+  924  ./a.out
+  925  g++ 8.cpp
+  926  ./a.out
+  927  g++ 8.cpp
+  928  ./a.out
+  929  g++ 8.cpp
+  930  ./a.out
+  931  g++ 8.cpp
+  932  ./a.out
+  933  g++ 8.cpp
+  934  ./a.out
+  935  g++ 8.cpp
+  936  ./a.out
+  937  g++ 8.cpp
+  938  ./a.out
+  939  g++ 8.cpp
+  940  ./a.out
+  941  g++ 8.cpp
+  942  ./a.out
+  943  g++ 8.cpp
+  944  ./a.out
+  945  g++ 8.cpp
+  946  ./a.out
+  947  g++ 8.cpp
+  948  ./a.out
+  949  $/
+  950  $?
+  951  echo $?
+  952  valgrind 8.cpp
+  953  sudo apt install valgrind
+  954  valgrind 8.cpp
+  955  valgrind ./a.out
+  956  g++ 9.cpp
+  957  ./a.out
+  958  g++ 9.cpp
+  959  ./a.out
+  960  g++ 9.cpp
+  961  ./a.out
+  962  g++ 9.cpp
+  963  ./a.out
+  964  g++ 8.cpp
+  965  ./a.out
+  966  g++ 8.cpp
+  967  ./a.out
+  968  g++ 8.cpp
+  969  ./a.out
+  970  g++ 8.cpp
+  971  ./a.out
+  972  g++ 8.cpp
+  973  ./a.out
+  974  g++ 8.cpp
+  975  ./a.out
+  976  g++ 8.cpp
+  977  ./a.out
+  978  g++ 8.cpp
+  979  ./a.out
+  980  g++ 8.cpp
+  981  ./a.out
+  982  g++ 8.cpp
+  983  ./a.out
+  984  g++ 9.cpp
+  985  ./a.out
+  986  echo $?
+  987  g++ 9.cpp
+  988  echo $?
+  989  ./a.out
+  990  echo $?
+  991  g++ 9.cpp
+  992  ./a.out
+  993  cd Documents/c
+  994  gcc 3.c
+  995  ./a.out
+  996  gcc 3.c
+  997  ./a.out
+  998  ./install.sh
+  999  ifconfig
+ 1000  ip addr show
+ 1001  scp 10mbfile pi@192.168.1.31:.
+ 1002  git config --global user.email "vibhorrawal@gmail.com"
+ 1003  git config --global user.name "vibhorrawal"
+ 1004  git status
+ 1005  cd Downloads/GitTest
+ 1006  git status
+ 1007  xilinx
+ 1008  sudo apt install xilinx
+ 1009  sudo apt install vivando
+ 1010  sudo apt install vivado
+ 1011  cd Downloads
+ 1012  cd GitTest
+ 1013  ls
+ 1014  touch text.txt
+ 1015  gedit text.txt
+ 1016  cd ..
+ 1017  git status
+ 1018  cd GitTest
+ 1019  git status
+ 1020  git add text.txt
+ 1021  git status
+ 1022  git commit
+ 1023  git commit -m "added file"
+ 1024  git push
+ 1025  git pull
+ 1026  gedit text.txt
+ 1027  git status
+ 1028  git commit
+ 1029  git add .
+ 1030  git commit
+ 1031  git commit -m "added 123"
+ 1032  git push
+ 1033  gedit text.txt
+ 1034  git add .
+ 1035  git commit -m "made changes"
+ 1036  git push
+ 1037  git
+ 1038  git fork
+ 1039  git clone fork GitTest
+ 1040  git diff
+ 1041  gedit text.txt
+ 1042  git diff
+ 1043  git commit -am "message"
+ 1044  git status
+ 1045  git push
+ 1046  git pull
+ 1047  git status
+ 1048  git pull
+ 1049  git log
+ 1050  git reset
+ 1051  gedit text.txt
+ 1052  git log
+ 1053  git reset -- hard f63c
+ 1054  gedit text.txt
+ 1055  git reset -- hard 45dd
+ 1056  gedit text.txt
+ 1057  git pull
+ 1058  git push
+ 1059  git reset -- hard 45dd
+ 1060  gedit text.txt
+ 1061  git reset 
+ 1062  gedit text.txt
+ 1063  git log
+ 1064  git reset --hard 667d5b4cef699ba7a111f46fb51a95aeeab9f54f
+ 1065  gedit text.txt
+ 1066  git branch
+ 1067  git branch New
+ 1068  git branch
+ 1069  git checkout New
+ 1070  git checkout master
+ 1071  git pull
+ 1072  gedit text.txt
+ 1073  git branch
+ 1074  git chekout New
+ 1075  git checkout New
+ 1076  git branch
+ 1077  git pull
+ 1078  git pussh
+ 1079  git push
+ 1080  iverilog
+ 1081  systemc
+ 1082  deb
+ 1083  snap info xdeb
+ 1084  snap info den
+ 1085  den
+ 1086  git remote add origin https://github.com/vibhorrawal/lab.git
+ 1087  echo "# lab" >> README.md
+ 1088  git init
+ 1089  git add README.md
+ 1090  git commit -m "first commit"
+ 1091  git remote add origin https://github.com/vibhorrawal/lab.git
+ 1092  git push -u origin master
+ 1093  git add -A
+ 1094  git commit -am "first push"
+ 1095  git push
+ 1096  wine
+ 1097  winecfg
+ 1098  git clone https://github.com/stripathi08/btp_16.git
+ 1099  python test2.py
+ 1100  pip install dlib
+ 1101  git clone https://github.com/birkbeckj/QuizTemplate.git
+ 1102  reboot
+ 1103  pip install tensorflow
+ 1104  sudo apt install pip3 tensorflow
+ 1105  sudo pip3 tensorflow
+ 1106  sudo pip3 install tensorflow
+ 1107  sudo pip3 install keras
+ 1108  reboot
+ 1109  jupyter
+ 1110  sudo apt install jupyter-core
+ 1111  jupyter
+ 1112  jupyter notebook
+ 1113  jupyter help
+ 1114  jupyter --help
+ 1115  jupyter /home/vibhor/Documents/ml/MNIST test1.py
+ 1116  jupyter /home/vibhor/Documents/ml/MNIST/test1.py
+ 1117  jupyter-core
+ 1118  jupyter --paths
+ 1119  cd Documents/ml
+ 1120  ls
+ 1121  cd MNIST
+ 1122  virtualenv my_project_env
+ 1123  source my_project_env/bin/activate
+ 1124  pip3 install jupyter
+ 1125  jupyter notebook
+ 1126  source my_project_env/bin/deactivate
+ 1127  ls
+ 1128  source deactivate my_project_env
+ 1129  deactivate
+ 1130  activate
+ 1131  activate my_project_env
+ 1132  sudo pip3 install pandas
+ 1133  sudo pip3 install sklearn
+ 1134  sudo pip3 install virtualenv
+ 1135  wine
+ 1136  wine --help
+ 1137  help wine
+ 1138  man wine
+ 1139  wine /home/vibhor/Downloads/rufus-3.4p.exe
+ 1140  sudo wine /home/vibhor/Downloads/rufus-3.4p.exe
+ 1141  sudo mkdir /media/iso/
+ 1142  sudo mount -o loop /path/to/ubuntu.iso /media/iso
+ 1143  sudo mount -o loop / in ubuntu-16.04.3-desktop-amd64.iso /media/iso
+ 1144  lsblk
+ 1145  cp -a /media/iso/. /media/sdb1
+ 1146  sudo cp -a /media/iso/. /media/sdb1
+ 1147  sudo apt-get install syslinux mtools
+ 1148  sudo syslinux -s /dev/sdb1
+ 1149  cd /media/sdb1
+ 1150  ls
+ 1151  ls -l
+ 1152  cd /media/sdd1
+ 1153  cp -a /media/iso/. /media/sdb1
+ 1154  sudo cp -a /media/iso/. /media/sdb1
+ 1155  cd
+ 1156  df
+ 1157  sudo dmesg
+ 1158  wine /home/vibhor/Downloads/rufus-3.4.exe
+ 1159  cd
+ 1160  sudo add-apt-repository ppa:gezakovacs/ppa
+ 1161  sudo apt-get install unetbootin
+ 1162  unetbootin
+ 1163  sudo unetbootin
+ 1164  df
+ 1165  sudo umount /dev/sdb1
+ 1166  sudo dd if=artful-desktop-amd64.iso of=/dev/sdd bs=1M status=progress
+ 1167  sudo dd if=artful-desktop-amd64.iso sudo dd if=ubuntu-16.04.3-desktop-amd64.iso of=/dev/sdd bs=1M status=progress
+ 1168  sudo dd if=artful-desktop-amd64.iso sudo dd if=ubuntu-16.04.3-desktop-amd64.iso of=/dev/sdb1 bs=1M status=progress
+ 1169  sudo dd if=ubuntu-16.04.3-desktop-amd64.iso of=/dev/sdb1 bs=1M status=progress
+ 1170  pip3 install matplotlib
+ 1171  python3
+ 1172  pip3 uninstall numpy
+ 1173  python3
+ 1174  pip3 install numpy
+ 1175  python3
+ 1176  pip3 uninstall numpy
+ 1177  python3
+ 1178  pip3 install numpy
+ 1179  python3
+ 1180  cd Documents
+ 1181  git commit -am "push"
+ 1182  git add -A
+ 1183  git commit -am "push"
+ 1184  git push
+ 1185  git add -A
+ 1186  git commit -am "push"
+ 1187  git push
+ 1188  jupyter notebook
+ 1189  jupyter-notebook
+ 1190  history
+ 1191  pip3 install jupyter
+ 1192  jupyter-notebook
+ 1193  jupyter notebook
+ 1194  cd Documents
+ 1195  git add -A
+ 1196  git commit -am "update"
+ 1197  git push
+ 1198  git -help
+ 1199  top
+ 1200  cd Documents/c
+ 1201  gcc 4.c
+ 1202  g++ 4.c
+ 1203  ./a.out
+ 1204  g++ 4.c
+ 1205  gcc 4.c
+ 1206  tweaks
+ 1207  gnome-tweaks
+ 1208  \b
+ 1209  adsfsdf;
+ 1210  afds/
+ 1211  documents/
+ 1212  documents
+ 1213  /documents
+ 1214  /user
+ 1215  /usr
+ 1216  top
+ 1217  logout
+ 1218  cd Documents/cpp
+ 1219  g++ 10.cpp
+ 1220  cd ../c
+ 1221  gcc 5.c
+ 1222  cd ../cpp
+ 1223  g++ 10.cpp
+ 1224  ./a.out
+ 1225  g++ 10.cpp
+ 1226  ./a.out
+ 1227  g++ 10.cpp
+ 1228  ./a.out
+ 1229  g++ 10.cpp
+ 1230  ./a.out
+ 1231  g++ 10.cpp
+ 1232  ./a.out
+ 1233  g++ 10.cpp
+ 1234  ./a.out
+ 1235  g++ 10.cpp
+ 1236  ./a.out
+ 1237  g++ 10.cpp
+ 1238  ./a.out
+ 1239  g++ 10.cpp
+ 1240  ./a.out
+ 1241  echo $?
+ 1242  g++ 10.cpp
+ 1243  ./a.out
+ 1244  cd ..
+ 1245  git add -A
+ 1246  git commit -am "backup"
+ 1247  git push
+ 1248  git --help
+ 1249  git help -a
+ 1250  reboot
+ 1251  shutdown
+ 1252  su
+ 1253  sudo -i
+ 1254  sl
+ 1255  sl --h
+ 1256  sl --help
+ 1257  sl -help
+ 1258  sl -m
+ 1259  sl & sl
+ 1260  sl & sl & sl & sl
+ 1261  moo
+ 1262  mojo
+ 1263  jojo
+ 1264  snap
+ 1265  link
+ 1266  whereis python
+ 1267  whereis gcc
+ 1268  which
+ 1269  which gcc
+ 1270  uptime
+ 1271  finger
+ 1272  user
+ 1273  whoami
+ 1274  cpuinfo
+ 1275  cpu
+ 1276  /proc/cpuinfo
+ 1277  w
+ 1278  ps
+ 1279  bg
+ 1280  du
+ 1281  df
+ 1282  free
+ 1283  top
+ 1284  ls -l
+ 1285  ./nirgam
+ 1286  sudo gedit ~/.bashrc
+ 1287  ./nirgam
+ 1288  ./configure
+ 1289  make
+ 1290  sudo make install
+ 1291  ./configure
+ 1292  gmake
+ 1293  sudo ln -s /usr/bin/make /usr/bin/gmake
+ 1294  gmake
+ 1295  which automake
+ 1296  automake --version
+ 1297  sudo apt remove automake
+ 1298  gmake
+ 1299  cd Documents
+ 1300  cd hi
+ 1301  ls
+ 1302  make 1
+ 1303  g++ 1.cpp
+ 1304  make 1
+ 1305  make 1.cpp
+ 1306  make 1
+ 1307  sudo gmake install
+ 1308  cd Documents/spp
+ 1309  cd Documents/cpp
+ 1310  g++ 11.cpp
+ 1311  ./a.out
+ 1312  sudo apt install octave-statistics
+ 1313  cd Documents
+ 1314  git add *
+ 1315  git commit -am "upload"
+ 1316  top
+ 1317  cd Documents
+ 1318  cd d
+ 1319  cd c
+ 1320  gcc 6.c
+ 1321  a.txt > ./a.out
+ 1322  3
+ 1323  ./a.out <a.txt
+ 1324  ./a.out < a.txt
+ 1325  ./a.out > a.txt
+ 1326  ./a.out < a.txt
+ 1327  gcc 6.c
+ 1328  ./a.out < a.txt
+ 1329  gcc 6.c
+ 1330  ./a.out < a.txt
+ 1331  ./a.out 
+ 1332  ./a.out < a.txt
+ 1333  ./a.out < a.txt > b.txt
+ 1334  a.out
+ 1335  .a.out
+ 1336  ./
+ 1337  exit
+ 1338  cd Documents
+ 1339  git add -A
+ 1340  git commit "backup"
+ 1341  git commit -am "backup"
+ 1342  git push
+ 1343  blkid
+ 1344  sudo blkid
+ 1345  sudo mkdir /media/extra
+ 1346  ls
+ 1347  fdisk
+ 1348  fdisk -l
+ 1349  sudo fdisk -l
+ 1350  sudo mount
+ 1351  sudo mount -a
+ 1352  sudo fdisk -l
+ 1353  sudo mount -t auto -v /dev/sdb1 /mnt/mount_nam
+ 1354  sudo mount -t auto -v /dev/sda3 /media/extra
+ 1355  sudo unmount /dev/sda3
+ 1356  unmount
+ 1357  reboot
+ 1358  sudo mkdir /media/extra
+ 1359  sudo mount -t auto -v /dev/sda3 /media/extra
+ 1360  fdisk -l
+ 1361  sudo fdisk -l
+ 1362  reboot
+ 1363  cd Documents/cpp
+ 1364  g++ 12.cpp
+ 1365  ./a.out
+ 1366  g++ 12.cpp
+ 1367  ./a.out
+ 1368  g++ 12.cpp
+ 1369  ./a.out
+ 1370  cd ../c
+ 1371  gcc 7.c
+ 1372  ./a.out
+ 1373  gcc 8.c
+ 1374  ./a.out
+ 1375  gcc 8.c
+ 1376  ./a.out
+ 1377  valgrind
+ 1378  valgrind 8.c
+ 1379  valgrind ./a.out
+ 1380  valgrind ./a.out --leak-check=full
+ 1381  gcc 8.c
+ 1382  valgrind ./a.out --leak-check=full
+ 1383  ./a.out
+ 1384  valgrind ./a.out --leak-check=full
+ 1385  gcc 8.c
+ 1386  ./a.out
+ 1387  gcc 8.c
+ 1388  ./a.out
+ 1389  gcc 8.c
+ 1390  ./a.out
+ 1391  gcc 8.c
+ 1392  ./a.out
+ 1393  gcc 8.c
+ 1394  ./a.out
+ 1395  gcc 8.c
+ 1396  ./a.out
+ 1397  gcc 8.c
+ 1398  ./a.out
+ 1399  gcc 8.c
+ 1400  gcc 7.c
+ 1401  ./a.out
+ 1402  gcc 8.c
+ 1403  ./a.out
+ 1404  gcc 8.c
+ 1405  ./a.out
+ 1406  gcc 8.c
+ 1407  ./a.out
+ 1408  gcc 8.c
+ 1409  ./a.out
+ 1410  gcc 8.c
+ 1411  ./a.out
+ 1412  gcc 8.c
+ 1413  ./a.out
+ 1414  gcc 8.c
+ 1415  ./a.out
+ 1416  gcc 8.c
+ 1417  ./a.out
+ 1418  gcc 8.c
+ 1419  ./a.out
+ 1420  gcc 8.c
+ 1421  ./a.out
+ 1422  gcc 8.c
+ 1423  ./a.out
+ 1424  gcc 8.c
+ 1425  ./a.out
+ 1426  gcc 8.c
+ 1427  ./a.out
+ 1428  gcc 8.c
+ 1429  ./a.out
+ 1430  gcc 8.c
+ 1431  ./a.out
+ 1432  gcc 8.c
+ 1433  ./a.out
+ 1434  gcc 8.c
+ 1435  ./a.out
+ 1436  gcc 8.c
+ 1437  ./a.out
+ 1438  gcc 8.c
+ 1439  ./a.out
+ 1440  gcc 8.c
+ 1441  ./a.out
+ 1442  gcc 9.c
+ 1443  ./a.out
+ 1444  gcc 9.c
+ 1445  gcc 8.c
+ 1446  ./a.out
+ 1447  gcc 8.c
+ 1448  ./a.out
+ 1449  gcc 9.c
+ 1450  ./a.out
+ 1451  gcc 9.c
+ 1452  ./a.out
+ 1453  gcc 9.c
+ 1454  ./a.out
+ 1455  gcc 10.c
+ 1456  ./a.out
+ 1457  gcc 10.c
+ 1458  ./a.out
+ 1459  gcc 10.c
+ 1460  ./a.out
+ 1461  gcc 10.c
+ 1462  ./a.out
+ 1463  gcc 10.c
+ 1464  ./a.out
+ 1465  gcc 10.c
+ 1466  ./a.out
+ 1467  gcc 9.c
+ 1468  ./a.out
+ 1469  gcc 9.c
+ 1470  ./a.out
+ 1471  gcc 9.c
+ 1472  ./a.out
+ 1473  gcc 9.c
+ 1474  ./a.out
+ 1475  gcc 9.c
+ 1476  ./a.out
+ 1477  gcc 9.c
+ 1478  ./a.out
+ 1479  gcc 9.c
+ 1480  ./a.out
+ 1481  gcc 9.c
+ 1482  ./a.out
+ 1483  gcc 9.c
+ 1484  ./a.out
+ 1485  gcc 9.c
+ 1486  ./a.out
+ 1487  gcc 9.c
+ 1488  ./a.out
+ 1489  gcc kruskal.c
+ 1490  ./a.out
+ 1491  gcc kruskal.c
+ 1492  ./a.out
+ 1493  gcc kruskal.c
+ 1494  ./a.out
+ 1495  gcc kruskal.c
+ 1496  ./a.out
+ 1497  gcc kruskal.c
+ 1498  ./a.out
+ 1499  gcc kruskal.c
+ 1500  ./a.out
+ 1501  gcc kruskal.c
+ 1502  ./a.out
+ 1503  gcc kruskal.c
+ 1504  ./a.out
+ 1505  gcc 9.c
+ 1506  ./a.out
+ 1507  gcc 9.c
+ 1508  ./a.out
+ 1509  gcc 9.c
+ 1510  ./a.out
+ 1511  gcc 9.c
+ 1512  ./a.out
+ 1513  gcc 9.c
+ 1514  ./a.out
+ 1515  gcc kruskal.c
+ 1516  ./a.out
+ 1517  gcc 9.c
+ 1518  ./a.out
+ 1519  gcc 9.c
+ 1520  ./a.out
+ 1521  gcc 9.c
+ 1522  ./a.out
+ 1523  gcc 9.c
+ 1524  ./a.out
+ 1525  gcc 9.c
+ 1526  ./a.out
+ 1527  gcc 9.c
+ 1528  ./a.out
+ 1529  gcc 9.c
+ 1530  ./a.out
+ 1531  gcc 9.c
+ 1532  ./a.out
+ 1533  gcc 9.c
+ 1534  ./a.out
+ 1535  gcc 9.c
+ 1536  ./a.out
+ 1537  gcc 9.c
+ 1538  ./a.out
+ 1539  gcc 9.c
+ 1540  ./a.out
+ 1541  gcc 9.c
+ 1542  ./a.out
+ 1543  gcc 9.c
+ 1544  ./a.out
+ 1545  gcc 9.c
+ 1546  ./a.out
+ 1547  gcc 9.c
+ 1548  ./a.out
+ 1549  gcc 9.c
+ 1550  ./a.out
+ 1551  gcc 9.c
+ 1552  ./a.out
+ 1553  gcc 9.c
+ 1554  ./a.out
+ 1555  gcc 9.c
+ 1556  ./a.out
+ 1557  gcc 9.c
+ 1558  ./a.out
+ 1559  gcc 9.c
+ 1560  ./a.out
+ 1561  gcc 9.c
+ 1562  ./a.out
+ 1563  gcc 9.c
+ 1564  ./a.out
+ 1565  gcc 9.c
+ 1566  ./a.out
+ 1567  gcc 9.c
+ 1568  ./a.out
+ 1569  gcc 9.c
+ 1570  ./a.out
+ 1571  gcc 9.c
+ 1572  ./a.out
+ 1573  gcc kruskal.c
+ 1574  ./a.out
+ 1575  gcc kruskal.c
+ 1576  ./a.out
+ 1577  gcc kruskal.c
+ 1578  ./a.out
+ 1579  gcc kruskal.c
+ 1580  ./a.out
+ 1581  gcc kruskal.c
+ 1582  ./a.out
+ 1583  gcc kruskal.c
+ 1584  ./a.out
+ 1585  gcc 10.c
+ 1586  ./a.out
+ 1587  gcc kruskal.c
+ 1588  ./a.out
+ 1589  gcc kruskal.c
+ 1590  ./a.out
+ 1591  gcc kruskal.c
+ 1592  ./a.out
+ 1593  gcc kruskal.c
+ 1594  ./a.out
+ 1595  gcc kruskal.c
+ 1596  ./a.out
+ 1597  gcc kruskal.c
+ 1598  ./a.out
+ 1599  gcc kruskal.c
+ 1600  ./a.out
+ 1601  gcc kruskal.c
+ 1602  ./a.out
+ 1603  gcc kruskal.c
+ 1604  ./a.out
+ 1605  gcc kruskal.c
+ 1606  ./a.out
+ 1607  gcc kruskal.c
+ 1608  ./a.out
+ 1609  gcc kruskal.c
+ 1610  ./a.out
+ 1611  gcc kruskal.c
+ 1612  ./a.out
+ 1613  gcc kruskal.c
+ 1614  ./a.out
+ 1615  gcc kruskal.c
+ 1616  ./a.out
+ 1617  gcc kruskal.c
+ 1618  ./a.out
+ 1619  gcc kruskal.c
+ 1620  ./a.out
+ 1621  gcc kruskal.c
+ 1622  ./a.out
+ 1623  gcc kruskal.c
+ 1624  ./a.out
+ 1625  gcc kruskal.c
+ 1626  ./a.out
+ 1627  gcc kruskal.c
+ 1628  ./a.out
+ 1629  gcc kruskal.c
+ 1630  ./a.out
+ 1631  gcc kruskal.c
+ 1632  ./a.out
+ 1633  gcc kruskal.c
+ 1634  ./a.out
+ 1635  gcc kruskal.c
+ 1636  ./a.out
+ 1637  gcc kruskal.c
+ 1638  ./a.out
+ 1639  gcc kruskal.c
+ 1640  ./a.out
+ 1641  gcc 10.c
+ 1642  ./a.out
+ 1643  gcc 10.c
+ 1644  ./a.out
+ 1645  gcc 10.c
+ 1646  ./a.out
+ 1647  gcc 10.c
+ 1648  ./a.out
+ 1649  gcc kruskal.c
+ 1650  ./a.out
+ 1651  gcc kruskal.c
+ 1652  ./a.out
+ 1653  gcc kruskal.c
+ 1654  ./a.out
+ 1655  gcc kruskal.c
+ 1656  ./a.out
+ 1657  gcc 9.c
+ 1658  ./a.out
+ 1659  gcc 9.c
+ 1660  ./a.out
+ 1661  gcc 9.c
+ 1662  ./a.out
+ 1663  g++ help.cpp
+ 1664  ./a.out
+ 1665  g++ help.cpp
+ 1666  ./a.out
+ 1667  g++ help.cpp
+ 1668  ./a.out
+ 1669  g++ help.cpp
+ 1670  ./a.out
+ 1671  g++ help.cpp
+ 1672  gcc 9.c
+ 1673  ./a.out
+ 1674  gcc 9.c
+ 1675  ./a.out
+ 1676  gcc 9.c
+ 1677  ./a.out
+ 1678  gcc 9.c
+ 1679  ./a.out
+ 1680  gcc 9.c
+ 1681  ./a.out
+ 1682  gcc 9.c
+ 1683  ./a.out
+ 1684  gcc 9.c
+ 1685  ./a.out
+ 1686  gcc 9.c
+ 1687  ./a.out
+ 1688  gcc 9.c
+ 1689  ./a.out
+ 1690  gcc 9.c
+ 1691  ./a.out
+ 1692  gcc 9.c
+ 1693  ./a.out
+ 1694  gcc 9.c
+ 1695  ./a.out
+ 1696  gcc 9.c
+ 1697  ./a.out
+ 1698  gcc 9.c
+ 1699  ./a.out
+ 1700  gcc 9.c
+ 1701  ./a.out
+ 1702  gcc 9.c
+ 1703  ./a.out
+ 1704  gcc 9.c
+ 1705  ./a.out
+ 1706  gcc 9.c
+ 1707  ./a.out
+ 1708  gcc 9.c
+ 1709  ./a.out
+ 1710  gcc 9.c
+ 1711  ./a.out
+ 1712  g++ hello.cpp
+ 1713  g++ help.cpp
+ 1714  ./a.out
+ 1715  g++ help.cpp
+ 1716  ./a.out
+ 1717  gcc 9.c
+ 1718  ./a.out
+ 1719  gcc 9.c
+ 1720  ./a.out
+ 1721  gcc 9.c
+ 1722  ./a.out
+ 1723  gcc 9.c
+ 1724  ./a.out
+ 1725  cd ..
+ 1726  git add *
+ 1727  git push am -"backup"
+ 1728  git commit am -"backup"
+ 1729  git commit -am "backup"
+ 1730  git push
+ 1731  git add *
+ 1732  git commit -am "backup"
+ 1733  cat /etc/shadow
+ 1734  sudo cat /etc/shadow
+ 1735  cat /etc/shadow
+ 1736  cd Documents/c
+ 1737  make 2
+ 1738  ./2
+ 1739  make 2
+ 1740  ./2
+ 1741  make --version
+ 1742  make --help
+ 1743  touch 2.c
+ 1744  cat 2
+ 1745  cat 2.c
+ 1746  gcc -S 2.c
+ 1747  cat 2.s
+ 1748  gcc -g 2.c
+ 1749  cat 2.s
+ 1750  gcc -g -Wa
+ 1751  gcc -g -Wa 2.c
+ 1752  gcc -g -W 2.c
+ 1753  gcc -g -Wa -O 2.c > text.txt
+ 1754  gcc -g -W -O 2.c > text.txt
+ 1755  gcc -g -Wa,-aslh -O 2.c > text.txt
+ 1756  gcc 2.c
+ 1757  objdump -S --disassemble a > 2.dump
+ 1758  objdump -S --disassemble a.out > 2.dump
+ 1759  history
+ 1760  history > terminal_history.txt

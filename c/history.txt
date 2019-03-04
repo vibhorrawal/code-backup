@@ -1,0 +1,1000 @@
+cd Documents/c
+gcc 2.c
+./a.out
+gcc 2.c
+./a.out
+reboot
+help octave
+man octave
+octave-terminal
+cd Documents/cpp
+gcc 2.c
+ls
+gcc 2.c
+cd
+cd c
+cd ~/Documents/c
+gcc 2.c
+./a.out
+gcc 2.c
+./a.out
+cd ..
+cd cpp
+g++ 3.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 4.cpp
+./a.out
+g++ 4.cpp
+./a.out
+g++ 4.cpp
+./a.out
+g++ 4.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 4.cpp
+./a.out
+g++ 3.cpp
+./a.out
+g++ 1.cpp
+./a.out
+g++ 5.c
+g++ 5.cpp
+./a.out
+g++ 5.cpp
+./a.out
+g++ 5.cpp
+./a.out
+g++ 5.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 6.cpp
+./a.out
+g++ 7.cpp
+./a.out
+g++ 7.cpp
+./a.out
+g++ 7.cpp
+./a.out
+g++ 7.cpp
+./a.out
+fbd
+./a.out
+fbd
+g++ 7.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 7.cpp
+./a.out
+g++ 7.cpp
+./a.out
+g++ 7.cpp
+./a.out
+cd Documents/cpp
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+$/
+$?
+echo $?
+valgrind 8.cpp
+sudo apt install valgrind
+valgrind 8.cpp
+valgrind ./a.out
+g++ 9.cpp
+./a.out
+g++ 9.cpp
+./a.out
+g++ 9.cpp
+./a.out
+g++ 9.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 8.cpp
+./a.out
+g++ 9.cpp
+./a.out
+echo $?
+g++ 9.cpp
+echo $?
+./a.out
+echo $?
+g++ 9.cpp
+./a.out
+cd Documents/c
+gcc 3.c
+./a.out
+gcc 3.c
+./a.out
+./install.sh
+ifconfig
+ip addr show
+scp 10mbfile pi@192.168.1.31:.
+git config --global user.email "vibhorrawal@gmail.com"
+git config --global user.name "vibhorrawal"
+git status
+cd Downloads/GitTest
+git status
+xilinx
+sudo apt install xilinx
+sudo apt install vivando
+sudo apt install vivado
+cd Downloads
+cd GitTest
+ls
+touch text.txt
+gedit text.txt
+cd ..
+git status
+cd GitTest
+git status
+git add text.txt
+git status
+git commit
+git commit -m "added file"
+git push
+git pull
+gedit text.txt
+git status
+git commit
+git add .
+git commit
+git commit -m "added 123"
+git push
+gedit text.txt
+git add .
+git commit -m "made changes"
+git push
+git
+git fork
+git clone fork GitTest
+git diff
+gedit text.txt
+git diff
+git commit -am "message"
+git status
+git push
+git pull
+git status
+git pull
+git log
+git reset
+gedit text.txt
+git log
+git reset -- hard f63c
+gedit text.txt
+git reset -- hard 45dd
+gedit text.txt
+git pull
+git push
+git reset -- hard 45dd
+gedit text.txt
+git reset 
+gedit text.txt
+git log
+git reset --hard 667d5b4cef699ba7a111f46fb51a95aeeab9f54f
+gedit text.txt
+git branch
+git branch New
+git branch
+git checkout New
+git checkout master
+git pull
+gedit text.txt
+git branch
+git chekout New
+git checkout New
+git branch
+git pull
+git pussh
+git push
+iverilog
+systemc
+deb
+snap info xdeb
+snap info den
+den
+git remote add origin https://github.com/vibhorrawal/lab.git
+echo "# lab" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/vibhorrawal/lab.git
+git push -u origin master
+git add -A
+git commit -am "first push"
+git push
+wine
+winecfg
+git clone https://github.com/stripathi08/btp_16.git
+python test2.py
+pip install dlib
+git clone https://github.com/birkbeckj/QuizTemplate.git
+reboot
+pip install tensorflow
+sudo apt install pip3 tensorflow
+sudo pip3 tensorflow
+sudo pip3 install tensorflow
+sudo pip3 install keras
+reboot
+jupyter
+sudo apt install jupyter-core
+jupyter
+jupyter notebook
+jupyter help
+jupyter --help
+jupyter /home/vibhor/Documents/ml/MNIST test1.py
+jupyter /home/vibhor/Documents/ml/MNIST/test1.py
+jupyter-core
+jupyter --paths
+cd Documents/ml
+ls
+cd MNIST
+virtualenv my_project_env
+source my_project_env/bin/activate
+pip3 install jupyter
+jupyter notebook
+source my_project_env/bin/deactivate
+ls
+source deactivate my_project_env
+deactivate
+activate
+activate my_project_env
+sudo pip3 install pandas
+sudo pip3 install sklearn
+sudo pip3 install virtualenv
+wine
+wine --help
+help wine
+man wine
+wine /home/vibhor/Downloads/rufus-3.4p.exe
+sudo wine /home/vibhor/Downloads/rufus-3.4p.exe
+sudo mkdir /media/iso/
+sudo mount -o loop /path/to/ubuntu.iso /media/iso
+sudo mount -o loop / in ubuntu-16.04.3-desktop-amd64.iso /media/iso
+lsblk
+cp -a /media/iso/. /media/sdb1
+sudo cp -a /media/iso/. /media/sdb1
+sudo apt-get install syslinux mtools
+sudo syslinux -s /dev/sdb1
+cd /media/sdb1
+ls
+ls -l
+cd /media/sdd1
+cp -a /media/iso/. /media/sdb1
+sudo cp -a /media/iso/. /media/sdb1
+cd
+df
+sudo dmesg
+wine /home/vibhor/Downloads/rufus-3.4.exe
+cd
+sudo add-apt-repository ppa:gezakovacs/ppa
+sudo apt-get install unetbootin
+unetbootin
+sudo unetbootin
+df
+sudo umount /dev/sdb1
+sudo dd if=artful-desktop-amd64.iso of=/dev/sdd bs=1M status=progress
+sudo dd if=artful-desktop-amd64.iso sudo dd if=ubuntu-16.04.3-desktop-amd64.iso of=/dev/sdd bs=1M status=progress
+sudo dd if=artful-desktop-amd64.iso sudo dd if=ubuntu-16.04.3-desktop-amd64.iso of=/dev/sdb1 bs=1M status=progress
+sudo dd if=ubuntu-16.04.3-desktop-amd64.iso of=/dev/sdb1 bs=1M status=progress
+pip3 install matplotlib
+python3
+pip3 uninstall numpy
+python3
+pip3 install numpy
+python3
+pip3 uninstall numpy
+python3
+pip3 install numpy
+python3
+cd Documents
+git commit -am "push"
+git add -A
+git commit -am "push"
+git push
+git add -A
+git commit -am "push"
+git push
+jupyter notebook
+jupyter-notebook
+history
+pip3 install jupyter
+jupyter-notebook
+jupyter notebook
+cd Documents
+git add -A
+git commit -am "update"
+git push
+git -help
+top
+cd Documents/c
+gcc 4.c
+g++ 4.c
+./a.out
+g++ 4.c
+gcc 4.c
+tweaks
+gnome-tweaks
+\b
+adsfsdf;
+afds/
+documents/
+documents
+/documents
+/user
+/usr
+top
+logout
+cd Documents/cpp
+g++ 10.cpp
+cd ../c
+gcc 5.c
+cd ../cpp
+g++ 10.cpp
+./a.out
+g++ 10.cpp
+./a.out
+g++ 10.cpp
+./a.out
+g++ 10.cpp
+./a.out
+g++ 10.cpp
+./a.out
+g++ 10.cpp
+./a.out
+g++ 10.cpp
+./a.out
+g++ 10.cpp
+./a.out
+g++ 10.cpp
+./a.out
+echo $?
+g++ 10.cpp
+./a.out
+cd ..
+git add -A
+git commit -am "backup"
+git push
+git --help
+git help -a
+reboot
+shutdown
+su
+sudo -i
+sl
+sl --h
+sl --help
+sl -help
+sl -m
+sl & sl
+sl & sl & sl & sl
+moo
+mojo
+jojo
+snap
+link
+whereis python
+whereis gcc
+which
+which gcc
+uptime
+finger
+user
+whoami
+cpuinfo
+cpu
+/proc/cpuinfo
+w
+ps
+bg
+du
+df
+free
+top
+ls -l
+./nirgam
+sudo gedit ~/.bashrc
+./nirgam
+./configure
+make
+sudo make install
+./configure
+gmake
+sudo ln -s /usr/bin/make /usr/bin/gmake
+gmake
+which automake
+automake --version
+sudo apt remove automake
+gmake
+cd Documents
+cd hi
+ls
+make 1
+g++ 1.cpp
+make 1
+make 1.cpp
+make 1
+sudo gmake install
+cd Documents/spp
+cd Documents/cpp
+g++ 11.cpp
+./a.out
+sudo apt install octave-statistics
+cd Documents
+git add *
+git commit -am "upload"
+top
+cd Documents
+cd d
+cd c
+gcc 6.c
+a.txt > ./a.out
+3
+./a.out <a.txt
+./a.out < a.txt
+./a.out > a.txt
+./a.out < a.txt
+gcc 6.c
+./a.out < a.txt
+gcc 6.c
+./a.out < a.txt
+./a.out 
+./a.out < a.txt
+./a.out < a.txt > b.txt
+a.out
+.a.out
+./
+exit
+cd Documents
+git add -A
+git commit "backup"
+git commit -am "backup"
+git push
+blkid
+sudo blkid
+sudo mkdir /media/extra
+ls
+fdisk
+fdisk -l
+sudo fdisk -l
+sudo mount
+sudo mount -a
+sudo fdisk -l
+sudo mount -t auto -v /dev/sdb1 /mnt/mount_nam
+sudo mount -t auto -v /dev/sda3 /media/extra
+sudo unmount /dev/sda3
+unmount
+reboot
+sudo mkdir /media/extra
+sudo mount -t auto -v /dev/sda3 /media/extra
+fdisk -l
+sudo fdisk -l
+reboot
+cd Documents/cpp
+g++ 12.cpp
+./a.out
+g++ 12.cpp
+./a.out
+g++ 12.cpp
+./a.out
+cd ../c
+gcc 7.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+valgrind
+valgrind 8.c
+valgrind ./a.out
+valgrind ./a.out --leak-check=full
+gcc 8.c
+valgrind ./a.out --leak-check=full
+./a.out
+valgrind ./a.out --leak-check=full
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+gcc 7.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+gcc 8.c
+./a.out
+gcc 8.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 10.c
+./a.out
+gcc 10.c
+./a.out
+gcc 10.c
+./a.out
+gcc 10.c
+./a.out
+gcc 10.c
+./a.out
+gcc 10.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc 10.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc 10.c
+./a.out
+gcc 10.c
+./a.out
+gcc 10.c
+./a.out
+gcc 10.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc kruskal.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+g++ help.cpp
+./a.out
+g++ help.cpp
+./a.out
+g++ help.cpp
+./a.out
+g++ help.cpp
+./a.out
+g++ help.cpp
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+g++ hello.cpp
+g++ help.cpp
+./a.out
+g++ help.cpp
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+gcc 9.c
+./a.out
+cd ..
+git add *
+git push am -"backup"
+git commit am -"backup"
+git commit -am "backup"
+git push
+git add *
+git commit -am "backup"
+cat /etc/shadow
+sudo cat /etc/shadow
+cat /etc/shadow
+sudo cat /etc/shadow
+histpry
+history
+history --help
+history *
+*
+echo *
+history -w history.txt
