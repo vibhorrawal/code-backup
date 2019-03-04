@@ -1,0 +1,25 @@
+Tcase()
+forward()
+distance()
+followLine()
+grip() 		//and  back untill line is received
+rotate()  //through dpdt
+value()
+colormatch(r,g,b)
+#define MINDISTANCE // for gripping
+#define BREADTH // FOR GRIPPING breadth of block
+ungrip() // also write for untill line is reached ie backwards
+left()
+right()
+
+
+
+
+
+
+-> in void loop()
+use normal line follower with default rotate
+
+but un function followLine() use default as forward
+
+
