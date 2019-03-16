@@ -4,7 +4,7 @@ using namespace std;
 
 #include <ctime>
 time_t t = time(NULL);
-clock_t start = clock();
+clock_t start = clock(); 
 void print_clock(){
 	fprintf(stderr, "------------------------------------------\n Clock ticks: %ld \t Time elapsed: %lds\n------------------------------------------\n\a", clock() - start, time(NULL) - t);
 	// fprintf(stderr, "----------------------------------------------------------------------------\n Clock ticks: %ld\t Time taken on CPU: %.3fs\t Time elapsed: %lds\n----------------------------------------------------------------------------\n\a", clock() - start, ((double)clock() - start)/ CLOCKS_PER_SEC, time(NULL) - t);

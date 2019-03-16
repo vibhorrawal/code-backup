@@ -1,5 +1,5 @@
-#include<stdio.h>
 #include<time.h>
+#include<stdio.h>
 void delay(int number_of_seconds) 
 { 
     // Converting time into milli_seconds 
@@ -11,17 +11,7 @@ void delay(int number_of_seconds)
     // looping till required time is not acheived 
     while (clock() < start_time + milli_seconds); 
 } 
-int main()
-{
 
-	for (int i = 0; i < 5; ++i)
-	{
-	printf("hello");
-
-	delay(1);
-	printf("[%3li%%]", 27);
-	delay(1);
-	printf("\rbye");
-	}
-return 0;
+void print_hello(){
+	printf("Hello, World\n");
 }
