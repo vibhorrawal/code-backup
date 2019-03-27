@@ -1,0 +1,11 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/vibho/xilinx_projects/project_test/project_test.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/full_adder.v,1553607727,verilog,,C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/s_test.v,,full_adder,,,,,,,,
+C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/multiply_4bit.v,1553604857,verilog,,,C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/full_adder.v,multiply_4bit,,,,,,,,
+C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/multiply_4bit1.v,1553607220,verilog,,,C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/full_adder.v,multiply_4bit1,,,,,,,,
+,,,,,C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/full_adder.v,s_test,,,,,,,,
+C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/test.v,1553589157,verilog,,C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/test_test.v,,test,,,,,,,,
+C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/test_test.v,1553595298,verilog,,,C:/Users/vibho/xilinx_projects/project_test/project_test.srcs/sources_1/new/test.v,test_test,,,,,,,,

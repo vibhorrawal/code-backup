@@ -1,0 +1,59 @@
+$date
+   Tue Mar 26 15:45:11 2019
+$end
+$version
+  2018.2
+$end
+$timescale
+  1ps
+$end
+$scope module test_test $end
+$var reg 1 ! r1 $end
+$var reg 1 " r2 $end
+$var reg 1 # r3 $end
+$var reg 1 $ r4 $end
+$var reg 1 % rr0 $end
+$var reg 1 & rr1 $end
+$var wire 1 ' out $end
+$scope module test_inst $end
+$var wire 1 ' y $end
+$var wire 1 ( i0 $end
+$var wire 1 ) i1 $end
+$var wire 1 * i2 $end
+$var wire 1 + i3 $end
+$var wire 1 , s0 $end
+$var wire 1 - s1 $end
+$var wire 1 . w0 $end
+$var wire 1 / w1 $end
+$var wire 1 0 w2 $end
+$var wire 1 1 w3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+1$
+1%
+1&
+1'
+0(
+1)
+0*
+1+
+1,
+0-
+0.
+1/
+00
+01
+$end
+#40000
+1'
+1-
+0.
+0/
+00
+11
