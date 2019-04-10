@@ -5,7 +5,7 @@
 % good free alternative. This code should work in Octave too.
 
 % Load in an input image
-im = imread('1.jpg');
+im = imread('test.png');
 
 % In matlab, K-means operates on a 2D array, where each sample is one row,
 % and the features are the columns. We can use the reshape function to turn
@@ -29,7 +29,7 @@ imflat = double(reshape(im, size(im,1) * size(im,2), 3));
 % number should get lower and lower, as the means settle on appropriate
 % values. For large K, it's unlikely that we will ever reach zero movement
 % (convergence) within 150 iterations.
-K = 10
+K = 4;
 [kIDs, kC] = kmeans(imflat, K, 'Display', 'iter', 'MaxIter', 150, 'Start', 'sample');
 
 % Matlab can output paletted images, that is, grayscale images where the
@@ -43,4 +43,4 @@ imout = reshape(uint8(kIDs), size(im,1), size(im,2));
 % Save file out, you need to subtract 1 from the image classes, since once
 % stored in the file the values should go from 0-255, not 1-256 like matlab
 % would do.
-imwrite(imout - 1, colormap, '4.png');
+imwrite(imout - 1, colormap, '6.png');
