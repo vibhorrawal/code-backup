@@ -1,7 +1,7 @@
-#define N 8
+#define N 5
 #include <bits/stdc++.h>
 using namespace std;
-
+int counter = 0;
 void displaySolution(int board[N][N]);
 bool isSafe(int board[N][N], int row, int col);
 bool solveNQ(int board[N][N], int col);
@@ -10,8 +10,9 @@ int main(int argc, char const *argv[])
 {
 	// scanf("%d", &N);
 	int board[N][N] = {0};
-	if(!solveNQ(board,0)) printf("There does not exist a solution for board of size %d\n", N);
-	displaySolution(board);
+	solveNQ(board,0); //printf("There does not exist a solution for board of size %d\n", N);
+	// displaySolution(board);
+	printf("Total number of solutions: %d\n", counter);
 	return 0;
 }
 
@@ -21,7 +22,8 @@ void displaySolution(int board[N][N]){
         for (int j = 0; j < N; j++) 
             printf(" %c ", board[i][j]?'X':'-'); 
         printf("\n"); 
-    } 
+    }
+    printf("\n\n\n"); 
 }
 
 bool isSafe(int board[N][N], int row, int col){
@@ -35,7 +37,7 @@ bool isSafe(int board[N][N], int row, int col){
 		if(board[i][j])
 			return false;
 
-	// 	diagonal check on ower left side
+	// 	diagonal check on lower left side
 	for (int i=row,j=col ; i<N && j>=0 ; i++,j--)
 		if(board[i][j])
 			return false;
@@ -44,8 +46,11 @@ bool isSafe(int board[N][N], int row, int col){
 }
 
 bool solveNQ(int board[N][N], int col){
-	if(col >= N) 
-		return true;
+	if(col >= N){
+		displaySolution(board); 
+		counter++;
+		return false;
+	}
 
 	for (int i = 0; i < N; ++i)
 	{
