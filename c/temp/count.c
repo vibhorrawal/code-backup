@@ -7,5 +7,6 @@ int main(int argc, char const *argv[])
 		number = number * 10 + argv[1][i++] - '0';
 	}
 	printf("%d\n", number);
+	printf("%d\n", atoi(argv[1]));
 	return 0;
 }
