@@ -15,5 +15,6 @@ def fib(limit):
 		b = c
 		count += 1
 
-l = int(input())
+# l = int(input())
+l = 5
 fib(l)
