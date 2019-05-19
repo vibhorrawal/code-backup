@@ -10,13 +10,46 @@ int precedence(char c){
 }
 string infixToPostfix(string exp){
 	string output;
+	char c;
 	stack<char> st;
-	st.push('N');
+	st.push('#');
 	int length = exp.length();
 	for (int i = 0; i < length; ++i)
 	{
-		if()
+		// if operand
+		if((exp[i] >= 'a' && exp[i] <= 'z') || (exp[i] >= 'A' && exp[i] <='Z'))
+			output += exp[i];
+		// if '('
+		else if(exp[i] == '(')
+			st.push('(');
+		// if ')' 
+		else if(exp[i] == ')'){
+
+			while(st.top() != '#' && st.top() != '('){
+				 c = st.top();
+				st.pop();
+				output += c;
+			}
+			if(st.top() == '(')
+				st.pop();
+		}
+		// if operator
+		else{
+			while(st.top() != '#' && precedence(exp[i]) <= precedence(st.top())){
+				 c = st.top();
+				st.pop();
+				output += c;
+			}
+			st.push(exp[i]);
+		}
 	}
+	// pop all remaining elements
+	while(st.top() != '#'){
+		 c = st.top();
+		st.pop();
+		output += c;
+	}
+	return output;
 }
 int main(int argc, char const *argv[])
 {
@@ -26,7 +59,7 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < n; ++i)
 	{
 		cin>>exp;
-		cout<<infixToPostfix(exp);
+		cout<<infixToPostfix(exp)<<endl;
 	}
 	return 0;
 }

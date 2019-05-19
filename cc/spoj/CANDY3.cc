@@ -15,17 +15,17 @@ void candyCheck(int inp[], int n){
 }
 int main(int argc, char const *argv[])
 {
-	long long int k,n,temp;
-	long long int sum = 0;
+	unsigned long long int k,n,temp;
+	unsigned long long int sum = 0;
 	// char c[2];
 	cin>>n;
 	// int inp[10000];
 	while(n--){
 		cin>>k;
-		for (long long int i = 0; i < k; ++i)
+		for (unsigned long long int i = 0; i < k; ++i)
 		{
 			cin>>temp;
-			sum = (sum + temp) % k;
+			sum = (sum%k + temp%k) % k;
 		}
 		if(!sum)
 			cout<<"YES\n";
