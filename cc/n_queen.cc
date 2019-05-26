@@ -1,4 +1,4 @@
-#define N 5
+#define N 8
 #include <bits/stdc++.h>
 using namespace std;
 int counter = 0;
