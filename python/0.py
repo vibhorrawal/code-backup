@@ -6,3 +6,4 @@ print ('Hello, World')
 time.sleep(1)
 stop = timeit.default_timer()
 
+print(stop - start)

@@ -16,7 +16,7 @@ void permutation(string str, string prefix){
 		}
 	}
 }
-asdf
+
 int main(int argc, char const *argv[])
 {
 	permutation("abcd","");
