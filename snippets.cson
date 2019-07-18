@@ -1,0 +1,55 @@
+'.source.cpp':
+  'Basic.Code':
+    'prefix': 'base-code'
+    'body':"""
+    #include<iostream>
+    using namespace std;
+
+    int main(int argc, char const *argv[]){
+      $1
+      return 0;
+    }
+    """
+
+  'cout':
+    'prefix': 'cout'
+    'body': 'cout << "${1:message}" << endl;$2'
+
+  'display.Aray':
+    'prefix': 'display'
+    'body': """cout<<"${3:array}: "; for(size_t ${1:i} = 0; ${1:i} < ${2:n} ; ${1:i}++){ cout<<${3:arr}[${1:i}]<<' ';}cout<<endl;$4"""
+
+  'debug line':
+    'prefix': 'debug'
+    'body': 'if(DEBUG){ $1 };'
+
+  'debug const':
+    'prefix': 'debugconst'
+    'body': 'const bool DEBUG = true; '
+
+  'Competitive-template':
+    'prefix': 'ct'
+    'body':"""
+#pragma GCC optimize ("O3")
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define v1d  vector<int>
+#define v2d  vector<vector<int> >
+#define M 1000000007
+#define T() int tc;cin>>tc;while(tc--)
+#define all(x) x.begin(),x.end()
+#define endl "\n"
+#define REP(i,n) for(auto i=0;i<(n);i++)
+#define FOR(i,a) for(auto i=a.begin();i!=a.end();i++)
+
+int32_t main(int argc, char const *argv[]){
+  ///freopen("output.txt","w",stdout);
+  ///freopen("input.txt","r",stdin);
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  $1
+  return 0;
+}
+
+    """
