@@ -1,34 +1,41 @@
 // quick sort implemented for arrays
-//partition1 is lomuto
-//partition2 is hoares
 #include<bits/stdc++.h>
 using namespace std;
 
-void qsort(int arr[], int low, int high);
-int partition1(int arr[], int low, int high);
-int partition2(int arr[], int low, int high);
+void qsort_hoares(int arr[], int low, int high);
+void qsort_lomuto(int arr[], int low, int high);
+int partition_lomuto(int arr[], int low, int high);
+int partition_hoares(int arr[], int low, int high);
 ////////////////////////////////////////////////////////////////////
 int main(int argc, char const *argv[]){
   int arr[] = {0,2,1,4,5,-3,8,0};
   int n = sizeof(arr) / sizeof(arr[0]);
-  qsort(arr, 0, n-1);
+  qsort_hoares(arr, 0, n-1);
   for (size_t i = 0; i < n ; i++) {
     cout<<arr[i]<<' ';
-  }
+  } cout<<endl;
   return 0;
 }
 /////////////////////////////////////////////////////////////////
-void qsort(int arr[], int low, int high){
+void qsort_hoares(int arr[], int low, int high){
   if(low < high)
   {
-    int pivot = partition2(arr,low,high);
-    qsort(arr,low,pivot-1);
-    qsort(arr,pivot+1,high);
+    int pivot = partition_hoares(arr,low,high);
+    qsort_hoares(arr,low,pivot);
+    qsort_hoares(arr,pivot+1,high);
+  }
+}
+void qsort_lomuto(int arr[], int low, int high){
+  if(low < high)
+  {
+    int pivot = partition_lomuto(arr,low,high);
+    qsort_lomuto(arr,low,pivot-1);
+    qsort_lomuto(arr,pivot+1,high);
   }
 }
 
 //lomuto
-int partition1(int arr[], int low, int high){
+int partition_lomuto(int arr[], int low, int high){
   int pivot = arr[high]; // highest element taken as pivot
   int k = low - 1;
   for (size_t i = low; i < high; i++) {
@@ -40,7 +47,7 @@ int partition1(int arr[], int low, int high){
 }
 
 //hoares
-int partition2(int arr[], int low, int high){
+int partition_hoares(int arr[], int low, int high){
   int pivot = arr[low];
   int i = low-1;
   int j = high+1;
@@ -51,5 +58,6 @@ int partition2(int arr[], int low, int high){
     if(i >= j) return j;
 
     swap(arr[i], arr[j]);
+
   }
 }

@@ -6,10 +6,10 @@ void merge(int arr[], int low, int mid, int high){
   int L[n1];
   int R[n2];
 
-  for(int k = low; k < n1; k++)
+  for(int k = 0; k < n1; k++)
     L[k] = arr[low+k];
 
-  for(int k = mid; k < n2; k++)
+  for(int k = 0; k < n2; k++)
     R[k] = arr[mid+1+k];
 
   int i = 0, j = 0, k = low;
