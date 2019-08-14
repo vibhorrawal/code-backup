@@ -2,6 +2,7 @@ from itertools import *
 from copy import copy
 
 
+
 def is_distinct( list ):
     '''Auxiliary function to is_solved
     checks if all elements in a list are distinct
