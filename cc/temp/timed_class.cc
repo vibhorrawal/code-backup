@@ -16,6 +16,6 @@ class TimedSection {
             clock_gettime(CLOCK_REALTIME, &end);
             double duration = 1e3 * (end.tv_sec - d_start.tv_sec) +
                               1e-6 * (end.tv_nsec - d_start.tv_nsec);
-            std::cerr << d_name << '\t' << std::fixed << duration << " ms\n"; 
+            std::cerr << d_name << '\t' << std::fixed << duration << " ms\n";
         }
 };
