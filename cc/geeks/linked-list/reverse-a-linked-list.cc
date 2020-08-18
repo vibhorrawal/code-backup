@@ -18,7 +18,6 @@ struct Node {
     }
 };
 
-
 /* Function to get the middle of the linked list*/
 struct Node *reverseList(struct Node *head);
 
