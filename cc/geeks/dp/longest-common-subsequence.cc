@@ -12,6 +12,7 @@ using namespace std;
 int longest_common_subsequence(string s1, string s2){
   int m = s1.size(), n= s2.size();
   int lcs[m+1][n+1];
+  int ans = 0;
   for (int i = 0; i <= m; i++) {
     for (int j = 0; j <= n; j++) {
       if(!i || !j)
@@ -20,6 +21,7 @@ int longest_common_subsequence(string s1, string s2){
         lcs[i][j] = lcs[i-1][j-1]+1;
       else
         lcs[i][j] = max(lcs[i-1][j],lcs[i][j-1]);
+      ans = max(ans,lcs[i][j]);
     }
   }
   return lcs[m][n];
