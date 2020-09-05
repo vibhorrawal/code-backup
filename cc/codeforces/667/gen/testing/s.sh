@@ -18,4 +18,3 @@ for((i = 1; ; ++i)); do
     # diff -w out1 out2 || break
     diff -w <(./brute < int) <(./prog < int) || break
 done
-

@@ -10,30 +10,35 @@ using namespace std;
 #define pb emplace_back
 #define db(x) if (DEBUG) cout<<"[ "<<#x<<" : "<<x<<" ]"<<endl;
 #define sz(x) (int) x.size()
+
 void clr(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 }
 
-int jumps(v1d &a){
-  v1d jumps(sz(a), INT_MAX);
-  int n = sz(a);
-  jumps[0] = 0;
-  for (int i = 1; i < n; i++) {
-    for (int j = 0; j < i; j++) {
-      if(j + a[j] >= i && jumps[j] != INT_MAX)
-        jumps[i] = min(jumps[i], jumps[j]+1);
+// make Rs "n" from v coins (set)
+int change_count(v1d v, int n){
+  int m = sz(v);
+  vector<vector<int>> dp(n+1, vector<int> (m+1,0));
+
+  REP(j,m+1) dp[0][j] = 1;
+
+  for (int i = 1; i < n+1; i++) {
+    for (int j = 1; j < m+1; j++) {
+        dp[i][j] = dp[i][j-1] + (i-v[j-1] >= 0 ? dp[i-v[j-1]][j] : 0);
     }
   }
-  return (jumps[n-1] == INT_MAX ? -1 : jumps[n-1]);
+  return dp[n][m];
 }
 int32_t main(int argc, char const *argv[]){
   clr();
   T(){
-    int n; cin>>n;
-    v1d a(n);
-    REP(i,n) cin>>a[i];
-    cout<<jumps(a)<<endl;
+    int m,n;
+    cin>>m;
+    v1d v(m);
+    REP(i,m) cin>>v[i];
+    cin>>n;
+    cout << change_count(v,n) << endl;
   }
   return 0;
 }

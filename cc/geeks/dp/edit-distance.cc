@@ -10,30 +10,38 @@ using namespace std;
 #define pb emplace_back
 #define db(x) if (DEBUG) cout<<"[ "<<#x<<" : "<<x<<" ]"<<endl;
 #define sz(x) (int) x.size()
+
 void clr(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 }
 
-int jumps(v1d &a){
-  v1d jumps(sz(a), INT_MAX);
-  int n = sz(a);
-  jumps[0] = 0;
-  for (int i = 1; i < n; i++) {
-    for (int j = 0; j < i; j++) {
-      if(j + a[j] >= i && jumps[j] != INT_MAX)
-        jumps[i] = min(jumps[i], jumps[j]+1);
+int cost(string s1, string s2){
+  int n = s1.length(), m = s2.length();
+  int dp[n+1][m+1] = {0};
+
+  for (int i = 0; i < n+1; i++) {
+    for (int j = 0; j < m+1; j++) {
+      if(!i)
+        dp[i][j] = j;
+      else if(!j)
+        dp[i][j] = i;
+      else if(s1[i-1] == s2[j-1])
+        dp[i][j] = dp[i-1][j-1];
+      else
+        dp[i][j] = min({dp[i][j-1], dp[i-1][j], dp[i-1][j-1]})+1;
     }
   }
-  return (jumps[n-1] == INT_MAX ? -1 : jumps[n-1]);
+  return dp[n][m];
 }
 int32_t main(int argc, char const *argv[]){
   clr();
   T(){
-    int n; cin>>n;
-    v1d a(n);
-    REP(i,n) cin>>a[i];
-    cout<<jumps(a)<<endl;
+    int t;
+    cin>>t>>t;
+    string s2,s1;
+    cin>>s1>>s2;
+    cout << cost(s1,s2) << endl;
   }
   return 0;
 }
