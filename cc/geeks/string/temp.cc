@@ -1,45 +1,44 @@
 #include<bits/stdc++.h>
-#define ll long long int
 using namespace std;
+#define ll long long int
+#define vi  vector<int>
+#define vvi vector<vector<int>>
+#define M 1e9+7
+#define T() int tc;cin>>tc;while(tc--)
+#define all(x) x.begin(),x.end()
+#define REP(i,n) for(auto i=0;i<(n);i++)
+#define DEBUG 01
+#define pb emplace_back
+#define db(x) if (DEBUG) cout<<"[*] "<<#x<<" : "<<x<<endl;
+#define fastIO ios_base::sync_with_stdio(false),cin.tie(NULL)
 
-int main()
-{
-  int t;
-  cin>>t;
-  for(int c=1;c<=t;c++){
-  	int n;
-  	cin>>n;
-  	string in, out;
-  	cin>>in;
-  	cin>>out;
-  	vector<vector<char>> mat(n, vector<char>(n,'N'));
-  	for(int i=0;i<n;i++)
-  	for(int j=0;j<n;j++)
-  		mat[i][j]='N';
+int getSpecialSubstring(string s, int k, string charValue){
+  set<char> normal;
+  for(int i = 0; i < 26; i++){
+    if(charValue[i] == '0')
+      normal.insert(i + 'a');
+  }
 
-  	for(int i=0;i<n;i++){
-  		for(int j=0;j<n;j++){
-  			if(i==j){
-  				mat[i][j]='Y';
-  				continue;
-			}
-  			if(in[j]=='Y' && out[i]=='Y' && j>0 && out[j-1]=='Y' &&mat[i][j-1]=='Y')
-  				mat[i][j]='Y';
-		}
-		for(int j=n-1;j>=0;j--){
-			if(in[j]=='Y' && out[i]=='Y' && j<n-1 && out[j+1]=='Y' && mat[i][j+1]=='Y')
-				mat[i][j]='Y';
-		}
-	}
-	cout<<"Case #"<<c<<":\n";
-	for(int i=0;i<n;i++){
-		for(int j=0;j<n;j++)
-			cout<<mat[i][j];
-		cout<<endl;
-	}
-	}
+  int normal_count = 0, length = 0, max_length = 0;
+  int i = 0, j = 0;
+  while(j < s.size()){
+    if(normal.find(s[j]) != normal.end())
+      normal_count++;
 
-
-
-    return 0;
+    while(normal_count > k){
+      if(normal.find(s[i]) != normal.end())
+        normal_count--;
+        i++;
+    }
+    max_length = max(j - i + 1, max_length);
+    j++;
+  }
+  return max_length;
+}
+int32_t main(int argc, char const *argv[]){
+  fastIO;
+  string c = "10101111111111111111111111";
+  string s = "abcde";
+  cout << getSpecialSubstring(s,1,c) << endl;
+  return 0;
 }
