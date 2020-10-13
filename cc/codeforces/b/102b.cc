@@ -16,20 +16,31 @@ void clr(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 }
-
 int sum(int n){
-  int ans=0;
+  int res = 0;
   while(n){
-    int s = n%10;
-    ans += s;
+    res += n % 10;
     n /= 10;
   }
-  return ans;
+  return res;
+}
+int sumtimes(string s){
+  if(s.size() == 1)
+    return 0;
+    int num = 0, count = 0;
+    for (int i = 0; i < s.size(); i++) {
+      num += s[i] - '0';
+    }
+    while(num/10){
+      num = sum(num);
+      count++;
+    }
+    return count+1;
 }
 int32_t main(int argc, char const *argv[]){
   clr();
   string s;
   cin>>s;
-  
+  cout<<sumtimes(s)<<endl;
   return 0;
 }

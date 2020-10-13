@@ -30,3 +30,19 @@ public:
         return ways[n-1];
     }
 };
+
+// O(n) time | O(1) space
+class Solution {
+public:
+    int climbStairs(int n) {
+        if(n < 3) return n;
+        int c = 3, a = 1, b = 2;
+        n-= 3;
+        while(n--){
+            a = b;
+            b = c;
+            c = a + b;
+        }
+        return c;
+    }
+};
