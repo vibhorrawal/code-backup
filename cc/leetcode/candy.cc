@@ -33,10 +33,10 @@ public:
         if(ratings.size() < 2)
             return ratings.size();
         vector<int> res(ratings.size(), 1);
-        auto minIndx = findMinIndx(ratings);
+        vector<int> minIndx = findMinIndx(ratings);
         for(int min: minIndx)
             inflate(ratings, min, res);
-        
+
         return accumulate(res.begin(), res.end(), 0);
     }
 };

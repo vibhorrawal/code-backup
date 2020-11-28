@@ -14,8 +14,10 @@ using namespace std;
 
 int32_t main(int argc, char const *argv[]){
   fastIO;
-  map<int,int> mp;
-  mp[1];
-  cout << mp.count(1) << endl;
+  vi v(2);
+  v[0] = v[1] = 2;
+  vi a = v;
+  v[0] = 3;
+  cout << a[0] << endl;
   return 0;
 }
