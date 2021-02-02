@@ -53,3 +53,31 @@ public:
         return maxArea;
     }
 };
+
+// O(N) time and space stock-span like
+class Solution {
+public:
+    int largestRectangleArea(vector<int>& a) {
+        int n = a.size();
+        vector<int> left(n), right(n); // left-smaller and right-smaller indexes
+        stack<int> st;
+        for(int i = 0; i < n; i++){
+            while(st.size() and a[st.top()] >= a[i]) st.pop();
+            left[i] = st.size() ? st.top() : -1;
+            st.push(i);
+        }
+        while(st.size()) st.pop();
+        for(int i = n-1; i >= 0; i--){
+            while(st.size() and a[st.top()] >= a[i]) st.pop();
+            right[i] = st.size() ? st.top() : n;
+            st.push(i);
+        }
+
+        int ans = 0;
+        for(int i = 0; i < n; i++){
+            int area = a[i] * (right[i] - left[i] - 1);
+            ans = max(ans, area);
+        }
+        return ans;
+    }
+};

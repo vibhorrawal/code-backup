@@ -1,4 +1,4 @@
-O(n) time | O(n) space
+// O(n) time | O(n) space
 class Solution {
 public:
     string simplifyPath(string path) {

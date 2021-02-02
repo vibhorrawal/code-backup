@@ -14,7 +14,7 @@ class B : public A {
 public:
   void fun(){
     int a;
-    a = privData; // not accessible
+    // a = privData; // not accessible
     a = protData;
     a = pubData;
   }
@@ -24,7 +24,7 @@ class C : private A {
 public:
   void fun(){
     int a;
-    a = privData; // not accessible
+    // a = privData; // not accessible
     a = protData;
     a = pubData;
   }
@@ -33,12 +33,12 @@ public:
 int main(){
   int a;
   B bobj;
-  a = bobj.privData; // not accessible
-  a = bobj.protData; // not accessible
+  // a = bobj.privData; // not accessible
+  // a = bobj.protData; // not accessible
   a = bobj.pubData;
 
   C cobj;
-  a = cobj.privData; // not accessible
-  a = cobj.protData; // not accessible
-  a = cobj.pubData; // not accessible
+  // a = cobj.privData; // not accessible
+  // a = cobj.protData; // not accessible
+  // a = cobj.pubData; // not accessible
 }
