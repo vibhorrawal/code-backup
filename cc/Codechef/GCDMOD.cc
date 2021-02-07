@@ -8,6 +8,7 @@ typedef pair<int,int> pii;
 #define all(x) x.begin(),x.end()
 #define sz(x) (int) x.size()
 #define REP(i,n) for(auto i=0;i<(n);i++)
+#define endl char(10)
 #define pb emplace_back
 #define fastIO ios_base::sync_with_stdio(false),cin.tie(NULL)
 template<class T> void read(T& x) { cin >> x; }
@@ -17,45 +18,34 @@ template<class T>string to_string(const vector<T> &v) {
 void DBG() { cerr << "]" << endl; }
 template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
-#define db(...) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
+#define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
 
-const int SZ = 10000000;
-vi generate_primes(){
-  vector<bool> v(SZ, true);
-  for(int i = 2; i * i <= SZ; i++){
-    if(v[i] == false) continue;
-    for(int p = 2 * i; p < SZ; p += i) v[p] = false;
-  }
-  vi res;
-  for(int i = 2; i < SZ; i++) if(v[i]) res.pb(i);
-  return res;
-}
-
-void find(vi &p, int n){
-    for (int i = 0; p[i] <= n>>1; i++) {
-        if(binary_search(all(p), n - p[i])){
-            cout << p[i] << ' ' << n - p[i] << '\n';
-            return;
-        }
+const int mod = 1e9 + 7;
+ll binpow(ll a, ll b, ll M = mod){
+    a %= M;
+    ll res = 1;
+    while(b){
+        if(b & 1) res = ((__int128) res * a) % M;
+        a = ((__int128) a * a) % M;
+        b >>= 1;
     }
+    return res;
 }
+
 int32_t main(int argc, char const *argv[]){
-  int n;
-  vi p = generate_primes();
-  while(cin >> n){
-    if(n <= 7) cout << "Impossible.\n";
-    else {
-        if(n % 2){
-            cout << "2 3 ";
-            n -= 5;
-            find(p, n);
+    fastIO;
+    const int M = 1e9 + 5;
+    T(){
+        ll a, b, n;
+        cin >> a >> b >> n;
+        // GCD(AN+BN, A-B) = GCD(A-B, (AN+BN)%(A-B))
+        if(a == b){
+            cout << (binpow(a, n) + binpow(b, n)) % M << endl;
         }
         else{
-            cout << "2 2 ";
-            n -= 4;
-            find(p, n);
+            ll d = (binpow(a, n, a - b) + binpow(b, n, a - b)) % (a - b);
+            cout << __gcd(d, (a - b)) % M << endl;
         }
     }
-  }
-  return 0;
+    return 0;
 }

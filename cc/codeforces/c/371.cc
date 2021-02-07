@@ -17,8 +17,47 @@ template<class T>string to_string(const vector<T> &v) {
 void DBG() { cerr << "]" << endl; }
 template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
-#define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
+#define db(...) if(0) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
 
+ll B = 0, S = 0, C = 0;
+ll nb, ns, nc;
+ll pb, ps, pc;
+ll r;
+
+bool can_make(ll x){
+    ll cost_b = max(0ll, pb * (x * B - nb));
+    ll cost_c = max(0ll, pc * (x * C - nc));
+    ll cost_s = max(0ll, ps * (x * S - ns));
+    db(cost_b, cost_c, cost_s);
+    return r >= cost_b + cost_c + cost_s;
+}
+int main(){
+    string s;
+    cin>>s;
+    for(char c : s) {
+      if(c == 'B') B++;
+      if(c == 'S') S++;
+      if(c == 'C') C++;
+    }
+
+    cin>>nb>>ns>>nc;
+    cin>>pb>>ps>>pc;
+    cin >> r;
+
+    ll ans = 0, l = 0, r = 1e13;
+    while(l <= r){
+        ll m = (l + r) /2;
+        if(can_make(m)) {
+            ans = m;
+            l = m + 1;
+        }
+        else {
+            r = m - 1;
+        }
+    }
+    cout << ans << endl;
+}
+/*
 int32_t main(int argc, char const *argv[]){
   fastIO;
   string s;
@@ -55,7 +94,9 @@ int32_t main(int argc, char const *argv[]){
   int cost_s = max(0, ps * (S - ns));
   int cost_c = max(0, pc * (C - nc));
 
+  if(r >= )
   cnt += r >= cost_b + cost_c + cost_s;
   cout << cnt << endl;
   return 0;
 }
+*/
