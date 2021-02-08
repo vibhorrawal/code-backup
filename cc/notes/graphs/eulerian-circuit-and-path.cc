@@ -33,6 +33,7 @@ Note: Additional requirement:-
  all vertices with non zero degree, need to belong to a single connected component
 */
 
+// Hierholzer's algorithm
 // O(E) {when we dont use is_connected() and instead use the commented out code of path.size() != edge_count + 1}
 class EulerianDirectedGraph {
     int edge_count, n;
