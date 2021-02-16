@@ -9,18 +9,14 @@ vector<int> topological_sort(vvi graph) {
         }
     }
     queue<int> q;
-    for(int i = 0; i < n; i++)
-        if(indegree[i] == 0)
-            q.push(i);
+    for(int i = 0; i < n; i++) if(indegree[i] == 0) q.push(i);
     while(!q.empty()){
         int u = q.front(); q.pop();
         res.push_back(u);
-        for(int v: graph[u])
-            if(--indegree[v] == 0)
-                q.push(v);
+        for(int v: graph[u]) if(--indegree[v] == 0) q.push(v);
     }
-    if(res.size() == n)
-        return res;
+
+    if(res.size() == n) return res;
 
     // there is a cycle in graph
     return {};
