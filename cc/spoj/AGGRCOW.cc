@@ -21,14 +21,37 @@ template<class T>string to_string(const vector<T> &v) {
 void DBG() { cerr << "]" << endl; }
 template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
-#ifdef LOCAL
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
-#else
-#define db(...) {}
-#endif
 
+bool f(int dist, vi &v, int c){
+    int prev = INT_MIN, cnt = 0;
+    for(int x : v){
+        if(x >= prev + dist){
+            cnt++;
+            prev = x;
+        }
+    }
+    return cnt >= c;
+}
 int32_t main(int argc, char const *argv[]){
     fastIO;
-
+    T(){
+        int n, c;
+        cin>>n>>c;
+        vi v(n);
+        read(v);
+        sort(all(v));
+        int l = 0, r = 1e9;
+        int ans = 0;
+        while(l <= r){
+            int m = (l + r)/2;
+            if(f(m, v, c)){
+                l = m + 1;
+                ans = m;
+            }
+            else r = m - 1;
+        }
+        cout << ans << endl;
+    }
     return 0;
 }

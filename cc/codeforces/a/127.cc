@@ -21,14 +21,23 @@ template<class T>string to_string(const vector<T> &v) {
 void DBG() { cerr << "]" << endl; }
 template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
-#ifdef LOCAL
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
-#else
-#define db(...) {}
-#endif
 
+double dist(int xa, int ya, int xb, int yb){
+    double d = (xa - xb) * (xa - xb) + (ya - yb) * (ya - yb);
+    return sqrt(d);
+}
 int32_t main(int argc, char const *argv[]){
     fastIO;
+    int n, k;
+    cin>>n>>k;
+    vi x(n), y(n);
+    REP(i,n) cin>>x[i]>>y[i];
+    double ans = 0;
+    for (int i = 0; i < n-1; i++) {
+        ans += dist(x[i], y[i], x[i+1], y[i+1]);
+    }
 
+    cout << fixed << setprecision(9) << (k * ans) / 50 << endl;
     return 0;
 }

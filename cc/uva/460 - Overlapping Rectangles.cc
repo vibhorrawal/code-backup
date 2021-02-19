@@ -21,14 +21,45 @@ template<class T>string to_string(const vector<T> &v) {
 void DBG() { cerr << "]" << endl; }
 template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
-#ifdef LOCAL
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
-#else
-#define db(...) {}
-#endif
 
+struct P{
+    int x, y;
+    void read(){
+        cin>>x>>y;
+    }
+};
+
+struct Rect {
+    P l,r;
+    void read(){
+        l.read();
+        r.read();
+    }
+};
+
+bool non_intersect(Rect &a, Rect &b){
+    for (int rep = 0; rep < 2; rep++) {
+        if(b.r.x <= a.l.x or a.r.x <= b.l.x) return true;
+        if(b.r.y <= a.l.y or a.r.y <= b.l.y) return true;
+        swap(a, b);
+    }
+    return false;
+}
 int32_t main(int argc, char const *argv[]){
     fastIO;
-
+    T(){
+        Rect a, b;
+        a.read();
+        b.read();
+        if(non_intersect(a, b)){
+            cout << "No Overlap" << endl;
+        }
+        else{
+            cout << max(a.l.x, b.l.x) << ' ' << max(a.l.y, b.l.y)
+            << ' ' << min(a.r.x, b.r.x) << ' ' << min(a.r.y, b.r.y) << endl;
+        }
+        if(tc) cout<<endl;
+    }
     return 0;
 }

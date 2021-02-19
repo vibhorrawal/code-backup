@@ -20,50 +20,35 @@ template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
 
-
-ll lcm(ll a, ll b){
-    return a * b / __gcd(a, b);
-}
-
-ll find(int n, vector<ll> &ai){
-    if(n < 2) return 0;
-    int k = ai.size();
-    ll res = 0;
-    for (int bit = 0; bit < (1<<k); bit++) {
-        ll cnt = 1, sign = 1;
-        for (int i = 0; i < k; i++) {
-            if((bit>>i) & 1){
-                    sign *= -1;
-                    cnt = lcm(cnt, ai[i]);
-            }
+void solve(){
+    int n;
+    cin>>n;
+    unordered_map<int,int> cnt;
+    REP(i,n){
+        int t;
+        cin>>t;
+        cnt[t]++;
+    }
+    vi v;
+    for(auto [i,c] : cnt) v.pb(c);
+    sort(all(v));
+    ll res = INT_MAX, ans = 0;
+    vi v2 = v;
+    v2.resize(unique(v2.begin(), v2.end()) - v2.begin());
+    for(int d : v2){
+        ans = 0;
+        for(int i = 0; i < v.size(); i++) {
+            if(d > v[i]) ans += v[i];
+            else ans += v[i] - d;
         }
-        res += sign * n / cnt;
+        res = min(ans, res);
     }
-    return res;
-}
-
-ll go(int pos, ll cnt, ll me, ll upto, vector<ll> &ai){
-    if(pos == ai.size()){
-        if(cnt % 2) return - me / upto;
-        else return me / upto;
-    }
-
-    ll res = 0;
-    res += go(pos + 1, cnt + 1, me, lcm(upto, ai[pos]), ai);
-    res += go(pos + 1, cnt, me, upto, ai);
-    return res;
+    cout << res << endl;
 }
 int32_t main(int argc, char const *argv[]){
     fastIO;
     T(){
-        ll n, m, a, d;
-        cin>>n>>m>>a>>d;
-        ll ans = 0;
-        vector<ll> ai;
-        for(int i = 0; i < 5; i++) ai.pb(a + i * d);
-        cout << find(m, ai) - find(n-1, ai) << endl;
-        // cout << go(0,0,m,1, ai) - go(0,0,n-1,1,ai) << endl;
-
+        solve();
     }
     return 0;
 }

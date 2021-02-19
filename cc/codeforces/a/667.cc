@@ -21,14 +21,21 @@ template<class T>string to_string(const vector<T> &v) {
 void DBG() { cerr << "]" << endl; }
 template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
-#ifdef LOCAL
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
-#else
-#define db(...) {}
-#endif
 
+const double PI = 2 * asin(1.0);
 int32_t main(int argc, char const *argv[]){
     fastIO;
-
+    int d,h,v,e;
+    cin>>d>>h>>v>>e;
+    double va = (double(v) * 4)/(d * d * PI);
+    if(va <= e and h){
+        cout << "NO" << endl;
+    }
+    else{
+        double t = double(h) / (va - e);
+        cout<<"YES"<<endl;
+        cout << fixed << setprecision(12) << t << endl;
+    }
     return 0;
 }

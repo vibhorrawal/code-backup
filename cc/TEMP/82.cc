@@ -1,12 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-typedef pair<int,int> pii;
 typedef vector<int> vi;
-typedef vector<char> vc;
 typedef vector<vector<int>> vvi;
-typedef vector<vector<char>> vvc;
-typedef vector<vector<pii>> vvp;
+typedef pair<int,int> pii;
 #define T() int tc;cin>>tc;while(tc--)
 #define all(x) x.begin(),x.end()
 #define sz(x) (int) x.size()
@@ -21,14 +18,12 @@ template<class T>string to_string(const vector<T> &v) {
 void DBG() { cerr << "]" << endl; }
 template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
-#ifdef LOCAL
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
-#else
-#define db(...) {}
-#endif
 
 int32_t main(int argc, char const *argv[]){
     fastIO;
-
+    int n;
+    cin>>n;
+    vi v(pow(10,n));
     return 0;
 }

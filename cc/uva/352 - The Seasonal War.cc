@@ -3,6 +3,7 @@ using namespace std;
 typedef long long ll;
 typedef vector<int> vi;
 typedef vector<vector<int>> vvi;
+typedef vector<vector<char>> vvc;
 typedef pair<int,int> pii;
 #define T() int tc;cin>>tc;while(tc--)
 #define all(x) x.begin(),x.end()
@@ -20,50 +21,41 @@ template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
 
+int img = 0;
 
-ll lcm(ll a, ll b){
-    return a * b / __gcd(a, b);
+bool inside(int i, int j, int n){
+    return 0 <= i and i < n and 0 <= j and j < n;
 }
-
-ll find(int n, vector<ll> &ai){
-    if(n < 2) return 0;
-    int k = ai.size();
-    ll res = 0;
-    for (int bit = 0; bit < (1<<k); bit++) {
-        ll cnt = 1, sign = 1;
-        for (int i = 0; i < k; i++) {
-            if((bit>>i) & 1){
-                    sign *= -1;
-                    cnt = lcm(cnt, ai[i]);
+int dx[] = {0,0,-1,-1,-1,1,1,1};
+int dy[] = {1,-1,-1,0,1,-1,0,1};
+void dfs(int i, int j, vvc &v){
+    int n = sz(v);
+    v[i][j] = '0';
+    for (int k = 0; k < 8; k++) {
+        int xi = i + dx[k], yi = j + dy[k];
+        if(not inside(xi, yi, n)) continue;
+        if(v[xi][yi] == '1') dfs(xi, yi, v);
+    }
+}
+void solve(int n){
+    vector<vector<char>> v(n, vector<char>(n));
+    REP(i,n) read(v[i]);
+    int cnt = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if(v[i][j] == '1'){
+                dfs(i,j,v);
+                cnt++;
             }
         }
-        res += sign * n / cnt;
     }
-    return res;
-}
-
-ll go(int pos, ll cnt, ll me, ll upto, vector<ll> &ai){
-    if(pos == ai.size()){
-        if(cnt % 2) return - me / upto;
-        else return me / upto;
-    }
-
-    ll res = 0;
-    res += go(pos + 1, cnt + 1, me, lcm(upto, ai[pos]), ai);
-    res += go(pos + 1, cnt, me, upto, ai);
-    return res;
+    cout<<"Image number "<< ++img << " contains "<< cnt << " war eagles."<<endl;
 }
 int32_t main(int argc, char const *argv[]){
     fastIO;
-    T(){
-        ll n, m, a, d;
-        cin>>n>>m>>a>>d;
-        ll ans = 0;
-        vector<ll> ai;
-        for(int i = 0; i < 5; i++) ai.pb(a + i * d);
-        cout << find(m, ai) - find(n-1, ai) << endl;
-        // cout << go(0,0,m,1, ai) - go(0,0,n-1,1,ai) << endl;
-
+    int n;
+    while(cin>>n){
+        solve(n);
     }
     return 0;
 }

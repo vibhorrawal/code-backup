@@ -21,14 +21,41 @@ template<class T>string to_string(const vector<T> &v) {
 void DBG() { cerr << "]" << endl; }
 template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
-#ifdef LOCAL
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
-#else
-#define db(...) {}
-#endif
 
+void dfs(int u, vi &vis, vi &res, vvi &g){
+    if(vis[u]) return;
+    vis[u] = true;
+    for(int v : g[u]){
+        if(not vis[v]) dfs(v, vis, res, g);
+    }
+    res.pb(u);
+}
+vi topsort(vvi &g){
+    vi res, vis(sz(g));
+    for (int i = 0; i < sz(g); i++) {
+        if(not vis[i]) dfs(i, vis, res, g);
+    }
+    reverse(all(res));
+    return res;
+}
 int32_t main(int argc, char const *argv[]){
     fastIO;
-
+    while(true){
+        int n, m;
+        cin>>n>>m;
+        if(m+n == 0) break;
+        vvi g(n);
+        REP(i,m){
+            int a, b;
+            cin>>a>>b;
+            g[a-1].pb(b-1);
+        }
+        vi v = topsort(g);
+        for (int i = 0; i < n; i++) {
+            cout<<v[i]+1<<' ';
+        }
+        cout << endl;
+    }
     return 0;
 }

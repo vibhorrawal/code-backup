@@ -20,50 +20,37 @@ template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
 
-
-ll lcm(ll a, ll b){
-    return a * b / __gcd(a, b);
-}
-
-ll find(int n, vector<ll> &ai){
-    if(n < 2) return 0;
-    int k = ai.size();
-    ll res = 0;
-    for (int bit = 0; bit < (1<<k); bit++) {
-        ll cnt = 1, sign = 1;
-        for (int i = 0; i < k; i++) {
-            if((bit>>i) & 1){
-                    sign *= -1;
-                    cnt = lcm(cnt, ai[i]);
-            }
-        }
-        res += sign * n / cnt;
+void solve(){
+    int n;
+    cin>>n;
+    vi res;
+    vector<pii> a(n);
+    ll lsum = 0, rsum = 0;
+    REP(i, n){
+        int t;
+        cin>>t;
+        a[i].first = t;
+        a[i].second = i+1;
+        lsum += t;
     }
-    return res;
-}
+    sort(all(a));
 
-ll go(int pos, ll cnt, ll me, ll upto, vector<ll> &ai){
-    if(pos == ai.size()){
-        if(cnt % 2) return - me / upto;
-        else return me / upto;
+    res.pb(a.back().second);
+    for(int i = n-1; i >= 1; i--){
+        lsum -= a[i].first;
+        rsum += a[i].first;
+        if(lsum >= a[i].first) res.pb(a[i-1].second);
     }
 
-    ll res = 0;
-    res += go(pos + 1, cnt + 1, me, lcm(upto, ai[pos]), ai);
-    res += go(pos + 1, cnt, me, upto, ai);
-    return res;
+    sort(all(res));
+    cout<<res.size()<<endl;
+    cout<<to_string(res);
+    cout<<endl;
 }
 int32_t main(int argc, char const *argv[]){
     fastIO;
     T(){
-        ll n, m, a, d;
-        cin>>n>>m>>a>>d;
-        ll ans = 0;
-        vector<ll> ai;
-        for(int i = 0; i < 5; i++) ai.pb(a + i * d);
-        cout << find(m, ai) - find(n-1, ai) << endl;
-        // cout << go(0,0,m,1, ai) - go(0,0,n-1,1,ai) << endl;
-
+        solve();
     }
     return 0;
 }

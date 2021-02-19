@@ -14,6 +14,8 @@ using namespace std;
 #define endl '\n'
 
 int32_t main(int argc, char const *argv[]){
-
+    int m;
+    cin>>m;
+    cout<<m;
   return 0;
 }

@@ -21,14 +21,25 @@ template<class T>string to_string(const vector<T> &v) {
 void DBG() { cerr << "]" << endl; }
 template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
-#ifdef LOCAL
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
-#else
-#define db(...) {}
-#endif
 
+vi gen(int n){
+    vi v(5);
+    v[0] = n / 5;
+    for (int i = 1; i < 5; i++) {
+        v[i] = (n / 5) + (n % 5 >= i);
+    }
+    return v;
+}
 int32_t main(int argc, char const *argv[]){
     fastIO;
-
+    int n, m;
+    cin>>n>>m;
+    vi an = gen(n), am = gen(m);
+    ll ans = 0;;
+    for (int i = 0; i < 5; i++) {
+        ans += (ll) an[i] * am[(5 - i) % 5];
+    }
+    cout << ans << endl;
     return 0;
 }

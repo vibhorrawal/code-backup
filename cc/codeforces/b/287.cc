@@ -29,6 +29,22 @@ template<class H, class... T> void DBG(H h, T... t) {
 
 int32_t main(int argc, char const *argv[]){
     fastIO;
+    ll n, k;
+    cin>>n>>k;
+    // #warning "n for 1"
+    db(n);
+    n--, k--;
+    if(n > k * (k - 1) / 2){
+        cout << "-1" << endl;
+        return 0;
+    }
 
     return 0;
 }
+
+/*
+1	00:02:13.385	Reading
+2	00:00:05.579	Thinking
+3	00:09:23.882	Coding
+4	00:09:22.560	Debugging
+*/

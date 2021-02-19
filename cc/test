@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# run this script to check for constraints, 256 megabyte
+
+MEMLIMIT=256000
+
+while getopts ":u" opt; do
+  case $opt in
+    u)
+      echo "2G memory limit!" >&2
+      MEMLIMIT=2048000
+      shift
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      ;;
+  esac
+done
+
+ulimit -m $MEMLIMIT
+ulimit -v $MEMLIMIT
+ulimit -H -v > /dev/null
+
+# diff -w <(./brute < int) <(./prog < int)
+
+g++  -DLOCAL "$1"
+time ./a.out < /home/vibhor/code/cc/in
+
+#
+# if [[ $# == 0 ]]; then
+#     time ./a.out < in
+# fi
+#
+# if [[ $# == 1 ]]; then
+#     ./$1
+# fi
+#
+# if [[ $# == 2 ]]; then
+#     ./$1 < $2
+# fi

@@ -1,12 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-typedef pair<int,int> pii;
 typedef vector<int> vi;
-typedef vector<char> vc;
 typedef vector<vector<int>> vvi;
-typedef vector<vector<char>> vvc;
-typedef vector<vector<pii>> vvp;
+typedef pair<int,int> pii;
 #define T() int tc;cin>>tc;while(tc--)
 #define all(x) x.begin(),x.end()
 #define sz(x) (int) x.size()
@@ -21,14 +18,19 @@ template<class T>string to_string(const vector<T> &v) {
 void DBG() { cerr << "]" << endl; }
 template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
-#ifdef LOCAL
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
-#else
-#define db(...) {}
-#endif
 
+ll boards(ll n, ll m){
+    // if(n < 8 or m < 8) return 0;
+    return (1 + (n - 7) * (m - 7)) / 2;
+}
 int32_t main(int argc, char const *argv[]){
     fastIO;
-
+    int n, m, c;
+    while(cin>>n>>m>>c){
+        if(n == 0 and m == 0 and c == 0) break;
+        if(c == 1) cout << ((n-7) * (m - 7) + 1) / 2 << endl;
+        else cout << (n - 7) * (m - 7) / 2 << endl;
+    }
     return 0;
 }
