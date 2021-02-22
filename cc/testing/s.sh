@@ -16,6 +16,5 @@ for((i = 1; ; ++i)); do
     # ./a < int > out1
     # ./brute < int > out2
     # diff -w out1 out2 || break
-    diff -w <(./brute < int) <(./prog < int) || break
+    diff <(./brute < int) <(./prog < int) || break
 done
-

@@ -27,35 +27,32 @@ template<class H, class... T> void DBG(H h, T... t) {
 #define db(...) {}
 #endif
 
-ll sigma(ll n){
-    if(n < 1) return 0;
-    return n * (n + 1)/2;
+int count_primes(int n){
+    vi p(n + 1, 1);
+    p[0] = p[1] = 0;
+    for (int i = 2; i * i <= n; i++) {
+        if(p[i]== 0) continue;
+        for (int j = i * 2; j <= n; j+= i) {
+            p[j] = 0;
+        }
+    }
+    return accumulate(all(p), 0);
 }
 
-bool f(ll m, ll k, ll n){
-    ll res = sigma(k) - sigma(k-m);
-    return res >= n;
+int count_squares(int n){
+    int i = 1, cnt = 0;
+    while(i * i <= n) {
+        cnt++;
+        i++;
+    }
+    return cnt;
 }
 int32_t main(int argc, char const *argv[]){
     fastIO;
-    ll n, k;
-    cin>>n>>k;
-    // #warning "n for 1"
-    db(n);
-    n--, k--;
-    if(n > k * (k + 1) / 2){
-        cout << "-1" << endl;
-        return 0;
+    T(){
+        int n;
+        cin>>n;
+        cout << count_squares(n) << endl;
     }
-    ll l = 0, r = n, ans = n;
-    while(l <= r){
-        ll m = l + (r - l)/2;
-        if(f(m, k, n)){
-            ans = m;
-            r = m - 1;
-        }
-        else l = m + 1;
-    }
-    cout << ans << endl;
     return 0;
 }

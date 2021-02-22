@@ -8,5 +8,19 @@ int rand(int a, int b) {
 
 int main(int argc, char* argv[]) {
     srand(atoi(argv[1])); // atoi(s) converts an array of chars to int
-    cout<<rand(0,INT_MAX)<<endl<<rand(0, INT_MAX)<<endl;
+    int n = 5, m = rand(0, n);
+    cout << n << ' ' << n-1 << endl;
+    for (int i = 0; i < n; i++) {
+        cout << i + 1 << ' ';
+    }
+    cout<<endl;
+    for(int i = 2; i <= n; ++i) {
+        printf("%d %d\n", rand(1, i - 1), i);
+    }
+    cout<<n<<endl;
+    for (int i = 0; i < n; i++) {
+        cout << i + 1 << ' ';
+    }
+    cout<<endl;
+    cout<<"0 0";
 }

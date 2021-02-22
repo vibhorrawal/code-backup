@@ -23,11 +23,27 @@ template<class H, class... T> void DBG(H h, T... t) {
   cerr << to_string(h); if(sizeof...(t)) cerr << ", "; DBG(t...); }
 #define db(...) if(1) cerr << "LINE(" << __LINE__ << ") -> [" << #__VA_ARGS__ << "]: [", DBG(__VA_ARGS__)
 
+ll l = 0;
+
+bool cycle(int u, vvi &g, vi &vis, int p = -1){
+    if(vis[u] == 2) return false;
+    if(vis[u] == 1) return true;
+    l++;
+    vis[u] = 1;
+    for (int v : g[u]) {
+        if(v == p) return 0;
+        if(cycle(v, g, vis, u)) return true;
+    }
+    vis[u] = 2;
+    return false;
+}
+
 int32_t main(int argc, char const *argv[]){
     fastIO;
     int n, m;
     cin>>n>>m;
     vvi g(n);
+    vi vis(n, 0);
     REP(i,m){
         int a, b;
         cin>>a>>b;
@@ -35,8 +51,16 @@ int32_t main(int argc, char const *argv[]){
         g[a].pb(b);
         g[b].pb(a);
     }
-
-    vi color(n, -1);
-    
+    ll ans = 0, cnt = 0;
+    for (int i = 0; i < n; i++) {
+        if(vis[i]) continue;
+        l = 0;
+        if(cycle(i, g, vis)){
+            cnt++;
+            db(cnt);
+            ans += (l % 2);
+        }
+    }
+    cout << ans /* + ((n - ans) % 2)*/ << endl;
     return 0;
 }

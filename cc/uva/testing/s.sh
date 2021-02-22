@@ -5,7 +5,7 @@ echo "[*] brute.cc"
 g++ brute.cc -o brute
 
 echo "[*] prog.cc"
-g++ 10106-Product.cc -o prog
+g++ "10461 - Difference.cc" -o prog
 
 echo
 for((i = 1; ; ++i)); do

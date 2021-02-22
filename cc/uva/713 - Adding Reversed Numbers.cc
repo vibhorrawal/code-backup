@@ -27,35 +27,45 @@ template<class H, class... T> void DBG(H h, T... t) {
 #define db(...) {}
 #endif
 
-ll sigma(ll n){
-    if(n < 1) return 0;
-    return n * (n + 1)/2;
+/*
+int rev(int a){
+    int b = 0;
+    while(a){
+        b = (b * 10) + (a % 10);
+        a /= 10;
+    }
+    return b;
+}
+*/
+
+string sum(const string &a, const string &b){
+    int i = sz(a)-1, j = sz(b)-1;
+    string res;
+    int c = 0;
+    while(i >= 0 or j >= 0){
+        int s = c + (i >= 0 ? a[i--] - '0' : 0) + (j >= 0 ? b[j--] - '0' : 0);
+        c = s / 10;
+        s %= 10;
+        res += to_string(s);
+    }
+    if(c) res += to_string(c);
+    reverse(all(res));
+    return res;
 }
 
-bool f(ll m, ll k, ll n){
-    ll res = sigma(k) - sigma(k-m);
-    return res >= n;
-}
 int32_t main(int argc, char const *argv[]){
     fastIO;
-    ll n, k;
-    cin>>n>>k;
-    // #warning "n for 1"
-    db(n);
-    n--, k--;
-    if(n > k * (k + 1) / 2){
-        cout << "-1" << endl;
-        return 0;
+    T(){
+        string a, b;
+        cin>>a>>b;
+        reverse(all(a));
+        reverse(all(b));
+
+        string res = sum(a, b);
+        reverse(all(res));
+        while(res[0] == '0') res.erase(res.begin());
+        
+        cout << res << endl;
     }
-    ll l = 0, r = n, ans = n;
-    while(l <= r){
-        ll m = l + (r - l)/2;
-        if(f(m, k, n)){
-            ans = m;
-            r = m - 1;
-        }
-        else l = m + 1;
-    }
-    cout << ans << endl;
     return 0;
 }

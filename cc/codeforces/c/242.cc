@@ -27,35 +27,40 @@ template<class H, class... T> void DBG(H h, T... t) {
 #define db(...) {}
 #endif
 
-ll sigma(ll n){
-    if(n < 1) return 0;
-    return n * (n + 1)/2;
-}
+int dx[8] = {-1,0,1,-1,1,-1,0,1};
+int dy[8] = {-1,-1,-1,0,0,1,1,1};
 
-bool f(ll m, ll k, ll n){
-    ll res = sigma(k) - sigma(k-m);
-    return res >= n;
+const int E = 1e9;
+bool is_inside(int x, int y, unordered_map<int, vector<pii>> &row){
+    if(x < 1 or x > E or y < 1 or y > E) return false;
+    for(auto &it : row[x]){
+        if(it.first <= y and it.second <= y) return true;
+    }
+    return false;
 }
 int32_t main(int argc, char const *argv[]){
     fastIO;
-    ll n, k;
-    cin>>n>>k;
-    // #warning "n for 1"
-    db(n);
-    n--, k--;
-    if(n > k * (k + 1) / 2){
-        cout << "-1" << endl;
-        return 0;
+    int x0,y0, x1, y1;
+    cin>>x0>>y0>>x1>>y1;
+    // x0--,y0--, y0--, y1--;
+    vi x, y; // queue
+    map<pair<int,int>,int> dist;
+    unordered_map<int, vector<pii>> row;
+    x.pb(x0); y.pb(y0);
+    dist[{x0, y0}] = 1;
+    int n;
+    cin>>n;
+    REP(i,n) {
+        int r, a, b;
+        cin>>r>>a>>b;
+        // r--,a--,b--;
+        row[r].push_back({a, b});
     }
-    ll l = 0, r = n, ans = n;
-    while(l <= r){
-        ll m = l + (r - l)/2;
-        if(f(m, k, n)){
-            ans = m;
-            r = m - 1;
-        }
-        else l = m + 1;
+    queue<pii> q;
+    q.push({x0, y0});
+    while(sz(q)){
+
     }
-    cout << ans << endl;
+    cout << "-1" << endl;
     return 0;
 }
