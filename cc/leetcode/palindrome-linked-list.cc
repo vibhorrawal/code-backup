@@ -8,7 +8,7 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-O(n) time | O(1) space
+// O(n) time | O(1) space
 class Solution {
     int length(ListNode* head){
         int l = 0;

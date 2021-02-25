@@ -1,11 +1,12 @@
 // My Favourite Data Structure :3
 
 class DSU {
-    int n, numer_of_components;
+    int n, number_of_components;
     vector<int> parent, sz;
 public:
     DSU(int size){
         n = size;
+        number_of_components = n;
         parent = vector<int>(n);
         sz = vector<int>(n, 1);
         for (int i = 0; i < n; i++) parent[i] = i;
@@ -14,7 +15,7 @@ public:
     bool connected(int a, int b) { return find(a) == find(b); }
     int component_size(int i) { return sz[find(i)]; }
     int size() { return n; }
-    int get_number_of_components() { return numer_of_components; }
+    int get_number_of_components() { return number_of_components; }
 
     // int find(int i){
     //     if(i == parent[i]) return i;
@@ -43,7 +44,7 @@ public:
             sz[root1] += sz[root2];
             parent[root2] = root1;
         }
-        numer_of_components--;
+        number_of_components--;
         return true;
     }
 };

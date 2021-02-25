@@ -14,7 +14,7 @@ string encode(TreeNode *root){
     }
     sort(li.begin(), li.end());
     string res;
-    for(string s : res) res += s;
+    for(string s : li) res += s;
     return "(" + res + ")";
 }
 
