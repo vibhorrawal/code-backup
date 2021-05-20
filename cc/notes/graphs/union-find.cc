@@ -17,17 +17,13 @@ public:
     int size() { return n; }
     int get_number_of_components() { return number_of_components; }
 
-    // int find(int i){
-    //     if(i == parent[i]) return i;
-    //     return parent[i] = find(parent[i]);
-    // }
     int find(int p){
         int root = p;
         while(root != parent[root]) root = parent[root];
-        while(p != root){
-            int nxt = parent[p];
-            parent[p] = root;
-            p = nxt;
+        while(p != root){			// int find(int i){
+            int nxt = parent[p];		//     if(i == parent[i]) return i;
+            parent[p] = root;			//     return parent[i] = find(parent[i]);
+            p = nxt;				// }
         }
         return root;
     }

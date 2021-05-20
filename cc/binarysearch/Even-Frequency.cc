@@ -46,3 +46,14 @@ bool solve(vector<int>& a) {
     }
     return x == 0;
 }
+
+// best way I found, there won't be hash collisions if we check for All(i) and All(i+1)
+// like check for [2,4,6]
+bool solve(vector<int>& a) {
+    int x = 0, x_1 = 0;
+    for(int i : a){
+        x ^= i;
+        x_1 ^= (i + 1);
+    }
+    return x == 0 and x_1 == 0;
+}
