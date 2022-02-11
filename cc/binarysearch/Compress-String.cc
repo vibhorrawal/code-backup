@@ -22,3 +22,15 @@ class Solution {
 string solve(string s) {
     return (new Solution())->solve(s);
 }
+
+// O(N) time | O(1) space, excluding returned string
+string solve(string s) {
+    char prev = -1;
+    string res;
+    for(char c : s){
+        if(c == prev) continue;
+        res.push_back(c);
+        prev = c;
+    }
+    return res;
+}

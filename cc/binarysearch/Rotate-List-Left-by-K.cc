@@ -1,6 +1,7 @@
 #include "solution.hpp"
 using namespace std;
 
+// O(N) time | O(1) space
 class Solution {
     public:
     vector<int> solve(vector<int>& nums, int k) {

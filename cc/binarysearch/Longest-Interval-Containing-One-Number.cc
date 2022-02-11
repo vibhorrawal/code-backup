@@ -11,6 +11,7 @@ int solve(vector<int>& nums) {
 }
 
 // if input is immutable
+// lol i read this again, and i am sorting an immutable input; not cool
 int solve(vector<int>& a) {
     if(a.size() == 1) return 1e5;
 

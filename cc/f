@@ -21,17 +21,17 @@ ulimit -m $MEMLIMIT
 ulimit -v $MEMLIMIT
 ulimit -H -v > /dev/null
 
-diff <(md5sum "$1") <(cat /home/vibhor/code/cc/md5sum-in) > /dev/null
+diff <(md5sum "$1") <(cat //Users/vibhorrawal/.code/cc/md5sum-in) > /dev/null
 
 if [[ $? == 1 ]]; then
-    md5sum "$1" > /home/vibhor/code/cc/md5sum-in
+    md5sum "$1" > /Users/vibhorrawal/.code/cc/md5sum-in
     g++  -DLOCAL "$1"
 else
     echo "using cached"
     echo "------------"
 fi
 
-time ./a.out < /home/vibhor/code/cc/in
+time ./a.out < /Users/vibhorrawal/.code/cc/in
 
 #
 # if [[ $# == 0 ]]; then

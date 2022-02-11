@@ -1,4 +1,4 @@
-// O(|S| * |T|) space and time
+// O(|S| + |T|) space and time
 bool solve(string s, string t) {
     map<char,int> count;
     for(char c : s) count[c]++;

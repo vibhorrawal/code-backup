@@ -30,6 +30,7 @@ int solve(string s, int k) {
 }
 
 // rabin karp rolling hash
+// O(N) time and space
 int solve(string s, int k) {
     unordered_map<long long,int> freq;
     long long rolling = 0, p = 1;

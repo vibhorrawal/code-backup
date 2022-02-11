@@ -24,3 +24,19 @@ bool solve(string d, string s) {
     }
     return true;
 }
+
+
+// same 
+bool solve(string d, string s) {
+    int di = 0, si = 0;
+    set<char> d_dict(d.begin(), d.end());
+    while(si < s.size()) {
+        if(!d_dict.count(s[si]) or s[si] == d[di]) {
+            si++;
+            continue;
+        }
+        while(di < d.size() and s[si] != d[di]) di++;
+        if(di == d.size()) return false;
+    }
+    return true;
+}

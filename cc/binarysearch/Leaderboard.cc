@@ -25,7 +25,7 @@ vector<int> solve(vector<int>& nums) {
 // another method
 vector<int> solve(vector<int>& a) {
     vector<int> v(a);
-    sort(v.rbegin(), v.rend());
+    sort(v.rbegin(), v.rendusk());
     unordered_map<int,int> rank;
     int r = 0;
     for(int i = 0; i < v.size(); i++){

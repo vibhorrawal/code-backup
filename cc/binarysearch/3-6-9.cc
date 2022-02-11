@@ -16,3 +16,27 @@ vector<string> solve(int n) {
     }
     return res;
 }
+
+
+// same 
+bool possible(string &s) {
+    for(char c : s) {
+        if(c == '3' || c == '6' || c == '9') return false;
+    }
+    return true;
+}
+
+vector<string> solve(int n) {
+    if(n == 0) return {};
+    vector<string> res;
+    for(int i = 1; i <= n; i++) {
+        if(i % 3 == 0) {
+            res.push_back("clap");
+        } else {
+            string num = to_string(i);
+            if(!possible(num)) res.push_back("clap");
+            else res.push_back(num);
+        }
+    }
+    return res;
+}

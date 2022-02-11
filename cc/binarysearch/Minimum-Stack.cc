@@ -36,3 +36,34 @@ class MinimumStack {
         return x;
     }
 };
+
+// or simply, push/pop pair
+class MinimumStack {
+    stack<pair<int,int>> st;
+    public:
+    MinimumStack() {
+        st = stack<pair<int,int>>();
+    }
+
+    void append(int val) {
+        if(st.size()) {
+            st.push({val, std::min(val, st.top().second)});
+        } else{
+            st.push({val, val});
+        }
+    }
+
+    int peek() {
+        return st.top().first;
+    }
+
+    int min() {
+        return st.top().second;
+    }
+
+    int pop() {
+        int val = st.top().first;
+        st.pop();
+        return val;
+    }
+};

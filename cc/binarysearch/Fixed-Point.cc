@@ -15,3 +15,18 @@ int solve(vector<int>& nums) {
     }
     return ans;
 }
+
+// cleaner
+int solve(vector<int>& a) {
+    int l = 0, r = a.size()-1, ans = -1;
+    while(l <= r){
+        int m = (l + r)/2;
+        if(m == a[m]){
+            ans = m;
+            r = m-1;
+        }
+        else if(m < a[m]) r = m - 1;
+        else l = m + 1;
+    }
+    return ans;
+}

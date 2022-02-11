@@ -1,6 +1,7 @@
 #include "solution.hpp"
 using namespace std;
 
+// math O(1) nothing better
 class Solution {
     public:
     int solve(int n) {

@@ -1,3 +1,4 @@
+// worst case O(N) [when hash function isn't able to distribute]
 class Set {
     vector<vector<int>> v;
     int sz = 1e3;

@@ -8,3 +8,16 @@ bool solve(vector<int>& nums) {
     }
     return true;
 }
+
+// O(N) time and space
+bool solve(vector<int>& nums) {
+    int min = *min_element(nums.begin(), nums.end());
+    int max = *max_element(nums.begin(), nums.end());
+    int d = (max - min) / (nums.size() - 1);
+    set<int> exist(nums.begin(), nums.end());
+    if(d == 0) return exist.size() == 1;
+    for(int num = min; num <= max; num += d) {
+        if(!exist.count(num)) return false;
+    }
+    return true;
+}

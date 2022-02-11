@@ -1,3 +1,5 @@
+// greedy
+// O(NlogN) time | O(1) space
 int solve(vector<int>& nums) {
     sort(nums.begin(), nums.end());
     int n = nums.size(), mx = INT_MIN;

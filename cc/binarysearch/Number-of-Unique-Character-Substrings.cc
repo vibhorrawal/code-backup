@@ -27,3 +27,18 @@ int solve(string s) {
     }
     return ans;
 }
+
+// O(N) time | O(1) space
+// aaaa => a a a a + aa aa aa + aaa aaa + aaaa
+// Sn(4)=>     4   +    3     +    2    +  1
+int sn(int n) { return n * (n+1) / 2; }
+int solve(string s) {
+    int ans = 0;
+    for(int i = 0; i < s.size();) {
+        int cnt = 0;
+        while(i+cnt < s.size() and s[i] == s[i+cnt]) cnt++;
+        ans += sn(cnt);
+        i += cnt;
+    }
+    return ans;
+}

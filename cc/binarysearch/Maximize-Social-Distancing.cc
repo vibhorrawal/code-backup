@@ -30,3 +30,17 @@ int solve(vector<int>& s) {
     ans = max(ans, (int) s.size() - last - 1);
     return ans;
 }
+
+// easier to think but O(N) space
+int solve(vector<int>& seats) {
+    const int n = seats.size(), INF = 1e9 + 7;
+    vector<int> dist(n, INF);
+    for(int i = 0; i < n; i++) {
+        if(seats[i] == 1) dist[i] = 0;
+        else if(i > 0) dist[i] = min(dist[i-1] + 1, dist[i]);
+    }
+    for(int i = n - 2; i >= 0; i--) {
+        dist[i] = min(dist[i+1] + 1, dist[i]);
+    }
+    return *max_element(dist.begin(), dist.end());
+}

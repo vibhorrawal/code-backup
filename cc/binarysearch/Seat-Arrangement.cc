@@ -49,3 +49,19 @@ bool solve(int n, vector<int>& a) {
     }
     return cnt >= n;
 }
+
+// lmao another alternate (well not, second above is same)
+bool solve(int n, vector<int>seats, int begin) {
+    int count = 0;
+    for(int i = begin; i < seats.size(); i++) {
+        if(i-1 >= 0 and seats[i-1]) continue;
+        if(i+1 < seats.size() and seats[i+1]) continue;
+        if(seats[i]) continue;
+        seats[i] = 1;
+        count++;
+    }
+    return count >= n;
+}
+bool solve(int n, vector<int>& seats) {
+    return solve(n, seats, 0) or solve(n, seats, 1);
+}

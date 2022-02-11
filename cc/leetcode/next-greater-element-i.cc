@@ -17,3 +17,35 @@ public:
         return res;
     }
 };
+
+
+// alternate 
+class Solution {
+public:
+    vector<int> find_nge(vector<int> &a) {
+        const int n = a.size();
+        vector<int> res(n, -1);
+        stack<int> st;
+        for(int i = 0; i < n; i++) {
+            while(st.size() and a[st.top()] <= a[i]) {
+                int id = st.top();
+                res[id] = a[i];
+                st.pop();
+            }
+            st.push(i);
+        }
+        return res;
+    }
+    vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
+        map<int, int> indexOf;
+        for(int i = 0; i < nums2.size(); i++) 
+            indexOf[nums2[i]] = i;
+        
+        vector<int> res, nge = find_nge(nums2);
+        for(int num : nums1) {
+            int id = indexOf[num];
+            res.push_back(nge[id]);
+        }
+        return res;
+    }
+};

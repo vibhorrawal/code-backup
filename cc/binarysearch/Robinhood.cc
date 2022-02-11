@@ -26,3 +26,27 @@ int solve(int n, int e, int o, int t) {
     }
     return years;
 }
+
+
+// O(1) using math
+int solve(int n, int e, int o, int t) {
+    double odd = (1 + o/100.0);
+    double even = (1 + e/100.0);
+    double target = double(t)/n;
+    if(t <= n) return 0;
+    // let's package in 2 yrs
+    double packed_odd_even = odd * even;
+    int yrs_2 = floor(log(target) / log(packed_odd_even));
+    double acheived_target = pow(packed_odd_even, yrs_2);
+    int total_years = yrs_2 * 2;
+    
+    double value = n * acheived_target; 
+    if(t <= value) return total_years;
+
+    value *= even;
+    if(t <= value) return total_years + 1;
+
+    value *= odd;
+    if(t <= value) return total_years + 2;
+    return -1;
+}

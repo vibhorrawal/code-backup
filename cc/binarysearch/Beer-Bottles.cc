@@ -1,4 +1,4 @@
-// O(n) time
+// O(log3(n)) time
 int solve(int n) {
     int ans = n;
     int rem = n;

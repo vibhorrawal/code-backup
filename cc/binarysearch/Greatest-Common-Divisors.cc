@@ -5,3 +5,10 @@ int solve(vector<int>& nums) {
     for(int i : nums) x = gcd(x,i);
     return x;
 }
+
+
+// gcd implementation
+int gcd(int a, int b) {
+    if(b == 0) return a;
+    return gcd(b, a % b);
+}

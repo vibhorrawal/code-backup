@@ -12,3 +12,17 @@ int solve(string s, string t) {
     }
     return res;
 }
+
+// cleaner
+int solve(string s, string t) {
+    unordered_map<char,int> freq;
+    for(char c : s) freq[c]++;
+    for(char c : t) freq[c]--;
+    // at this moment, either count +ve or -ve
+    int ans = 0;
+    for(char c = 'a'; c <= 'z'; c++) {
+        if(freq[c] <= 0) continue;
+        ans += freq[c];
+    }
+    return ans;
+}

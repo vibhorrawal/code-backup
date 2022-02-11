@@ -12,3 +12,14 @@ bool solve(vector<vector<int>>& votes) {
     }
     return false;
 }
+
+// same as above, using set's return value
+bool solve(vector<vector<int>>& votes) {
+    unordered_set<int> seen;
+    for(auto vote : votes) {
+        int voter_id = vote[1];
+        if(!seen.insert(voter_id).second) 
+            return true;
+    }
+    return false;
+}

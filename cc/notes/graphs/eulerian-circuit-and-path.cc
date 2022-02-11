@@ -3,12 +3,20 @@ using namespace std;
 
 
 /*
-Definition: An Eulerian path on a graph is a traversal of the graph that passes through each edge exactly once. It is an Eulerian circuit if it starts and ends at the same vertex.
+Definition: An Eulerian path on a graph is a traversal of the graph that passes through each edge exactly once. 
+It is an Eulerian circuit if it starts and ends at the same vertex.
 
-If a graph admits an Eulerian path, then there are either 0 or 2 vertices with odd degree. If a graph admits an Eulerian circuit, then there are 0 vertices with odd degree.
+If a graph admits an Eulerian path, then there are either 0 or 2 vertices with odd degree. 
+If a graph admits an Eulerian circuit, then there are 0 vertices with odd degree.
 
-Theorem: A graph has an Eulerian path if and only if (1) every vertex of degree ≥ 1 lies in the same connected component, and (2) there are 0 or 2 vertices of odd degree.
-A graph has an Eulerian circuit if and only if (1) every vertex of degree ≥ 1 lies in the same connected component, and (2) every vertex has even degree.
+Theorem: 
+A graph has an Eulerian path if and only if 
+(1) every vertex of degree ≥ 1 lies in the same connected component, and 
+(2) there are 0 or 2 vertices of odd degree.
+
+A graph has an Eulerian circuit if and only if 
+(1) every vertex of degree ≥ 1 lies in the same connected component, and 
+(2) every vertex has even degree.
 https://brilliant.org/wiki/eulerian-path/
 
 A directed graph is Eulerian iff every graph vertex has equal indegree and outdegree.
